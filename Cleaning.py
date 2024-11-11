@@ -20,7 +20,7 @@ def GetCleanedData(df):
 
     #  Transforming dictionary-like string representations into simpler formats
     df['Movie country'] = df['Movie country'].apply(lambda x: list(ast.literal_eval(x).values())[0])
-    df['Movie genres'] = df['Movie genres'].apply(lambda x: list(ast.literal_eval(x).values()))
+    df['Movie genres'] = df['Movie genres'].apply(lambda x: list(ast.literal_eval(x).values())[0])
     df['Movie languages'] = df['Movie languages'].apply(lambda x: list(ast.literal_eval(x).values()))
 
     df_date_revenue_clean = df.dropna(subset=['Movie release date', 'Movie box office revenue']).copy()
