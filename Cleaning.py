@@ -11,6 +11,13 @@ def format_date(date) :
     date = date[:4]
     return date
 
+# Just keep dates between the valide bounds (1677-2262)
+def filter_out_of_bounds(date):
+    try:
+        pd.to_datetime(date)
+        return True  
+    except pd.errors.OutOfBoundsDatetime:
+        return False  
 
 def GetCleanedData(df):
     df = df.copy()
@@ -30,6 +37,10 @@ def GetCleanedData(df):
     df_date_revenue_clean.loc[:, 'Movie release date'] = df_date_revenue_clean['Movie release date'].apply(format_date)
     df_date_clean.loc[:, 'Movie release date'] = df_date_clean['Movie release date'].apply(format_date)
     df_date_revenue_runtime_clean.loc[:, 'Movie release date'] = df_date_revenue_runtime_clean['Movie release date'].apply(format_date)
+
+    df_date_revenue_clean = df_date_revenue_clean[df_date_revenue_clean['Movie release date'].apply(filter_out_of_bounds)]
+    df_date_clean = df_date_clean[df_date_clean['Movie release date'].apply(filter_out_of_bounds)]
+    df_date_revenue_runtime_clean = df_date_revenue_runtime_clean[df_date_revenue_runtime_clean['Movie release date'].apply(filter_out_of_bounds)]
 
     return df_date_clean, df_date_revenue_clean, df_date_revenue_runtime_clean
 
