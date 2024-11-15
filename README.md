@@ -106,8 +106,8 @@ The exploratory data analysis (EDA) will enable us to select six geographically 
 
 ### Clone Project
 ```bash
-git clone [<project link>](https://github.com/epfl-ada/ada-2024-project-4bigbrains.git)
-cd <ada-2024-project-4bigbrains>
+git clone https://github.com/epfl-ada/ada-2024-project-4bigbrains.git
+cd ada-2024-project-4bigbrains
 ```
 
 ### Install Requirements
