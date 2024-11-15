@@ -27,7 +27,7 @@ Through data on the movie industry—like box office revenues, actors' character
 
 ## Additional Datasets
 In addition to the given Movie Metadata (`movie.metadata.tsv`, `character.metadata.tsv`), we use:
-1. **Stanford CoreNLP-Processed Summaries (628 MB):** Plot summaries from the metadata dataset, processed for linguistic analysis (tagging, parsing, named entity recognition, coreference). This file should be located in the parent directory of the GitHub repository on the local computer (`../src/corenlp_plot_summaries.tar`).
+1. **Stanford CoreNLP-Processed Summaries (628 MB):** Plot summaries from the metadata dataset, processed for linguistic analysis (tagging, parsing, named entity recognition, coreference). This file should be located in the parent directory of the GitHub repository on the local computer (`../data/corenlp_plot_summaries.tar`).
 2. **Global GDP Data (`GDP.csv`):** Annual GDP per capita in constant US$ (2015) by country, used to analyze economic context in relation to the movie industry.
 
 ---
