@@ -112,8 +112,12 @@ cd ada-2024-project-4bigbrains
 
 ### Install Requirements
 ```bash
-pip install -r pip_requirements.txt
+pip install -r requirements.txt
 ```
+
+### Add Dataset Manually
+Download the file corenlp_plot_summaries.tar from https://www.cs.cmu.edu/~ark/personas/.
+Place the file in the data folder.
 
 ## Project Structure
 The directory structure of new project looks like this:
@@ -122,12 +126,12 @@ The directory structure of new project looks like this:
 ├── data                      <- Folder with project data files
 │
 ├── src                       <- Folder with source code
-│                      
-├── Cleaning.py               <- File with function to clean the data needed
+│   └── utils                 <- Subfolder for utility functions
+│       └── cleaning.py       <- File containing the cleaning functions
 │
 ├── results.ipynb             <- Notebook showing the results
 │
 ├── .gitignore                <- List of files ignored by git
-├── pip_requirements.txt      <- File for installing Python dependencies
+├── requirements.txt          <- File for installing Python dependencies
 └── README.md
 ```
