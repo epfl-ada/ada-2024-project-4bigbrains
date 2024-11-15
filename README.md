@@ -107,11 +107,11 @@ The exploratory data analysis (EDA) will enable us to select six geographically 
 ### Clone Project
 ```bash
 git clone [<project link>](https://github.com/epfl-ada/ada-2024-project-4bigbrains.git)
-cd <ada-2024-project-4bigbrains>
+cd <ada-2024-project-4bigbrains>```
 
 ### Install Requirements
 ```bash
-pip install -r pip_requirements.txt
+pip install -r pip_requirements.txt```
 
 ## Project Structure
 The directory structure of new project looks like this:
@@ -128,4 +128,4 @@ The directory structure of new project looks like this:
 ├── .gitignore                <- List of files ignored by git
 ├── pip_requirements.txt      <- File for installing Python dependencies
 └── README.md
-
+```
