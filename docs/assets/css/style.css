@@ -1,6 +1,6 @@
 /* General Styles */
 :root {
-    --primary-color: #0078a0;
+    --primary-color: #333636;
     --secondary-color: #ffb400;
     --background-color: #f5f8fa;
     --text-color: #333;
@@ -29,9 +29,18 @@ body {
     font-weight: 300; /* Légèrement plus léger pour un effet subtil */
 }
 
+@font-face {
+    font-family: 'Treasure-Map';
+    src: url('../fonts/Treamd.ttf') format('truetype');
+  }
+  
+@font-face {
+    font-family: 'Treasurehunt';
+    src: url('../fonts/Treasurehunt.otf') format('truetype');
+  }
 /* Header Styles */
 .main-header {
-    position: relative;
+    /*position: relative;*/
     height: 100vh;
     color: white;
     text-align: center;
@@ -50,7 +59,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(60%); /* Ajuster la luminosité */
+    filter: brightness(60%) blur(2px); /* Ajuster la luminosité */
 }
 
 .header-overlay {
@@ -64,15 +73,16 @@ body {
 
 .hero-content {
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     z-index: 1;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Treasure-Map','Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .hero-content p {
