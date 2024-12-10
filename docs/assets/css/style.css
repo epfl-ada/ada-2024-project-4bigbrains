@@ -1,0 +1,171 @@
+/* General Styles */
+:root {
+    --primary-color: #0078a0;
+    --secondary-color: #ffb400;
+    --background-color: #f5f8fa;
+    --text-color: #333;
+    --light-text: #666;
+    --font-family: 'Roboto', sans-serif;
+    --btn-primary-bg: rgba(255, 255, 255, 0.2); /* Fond transparent */
+    --btn-primary-hover-bg: rgba(255, 255, 255, 0.4); /* Fond au survol plus intense */
+    --btn-primary-color: white; /* Texte du bouton en blanc */
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden; /* Pour éviter le défilement horizontal */
+}
+
+/* Style spécifique à .sub-heading */
+.sub-heading {
+    color: white !important; /* Force la couleur du texte en blanc, même si un autre style est appliqué */
+    font-size: 1.2rem; /* Ajuste la taille de la police selon tes préférences */
+    margin-bottom: 30px; /* Ajoute un espace en bas du texte */
+    font-weight: 300; /* Légèrement plus léger pour un effet subtil */
+}
+
+/* Header Styles */
+.main-header {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%); /* Ajuster la luminosité */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Réduire l'opacité du voile noir */
+}
+
+.hero-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-content p {
+    color: var(--light-text);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Bouton Start the Hunt */
+.hero-content .btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-color);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid var(--btn-primary-color);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1); /* Taille normale */
+}
+
+/* Effet au survol du bouton */
+.hero-content .btn-primary:hover {
+    background-color: var(--btn-primary-hover-bg);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1); /* Agrandir le bouton au survol */
+    padding: 20px 40px; /* Augmenter le padding pour un effet plus grand */
+}
+
+/* Animation du bouton */
+.hero-content .btn-primary:active {
+    transform: scale(1.05); /* Réduit légèrement lors du clic pour l'effet */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* Clue Sections */
+.clue-section {
+    padding: 50px 10%;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ccc;
+}
+
+.clue-section h2 {
+    font-size: 2.5rem;  /* Taille du texte */
+    color: #333; /* Assurez-vous que la couleur est bien sombre et visible */
+    font-weight: bold; /* Mettre les titres en gras */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Plot Container */
+.plot-container {
+    margin-top: 30px;
+}
