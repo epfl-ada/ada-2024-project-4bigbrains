@@ -25,7 +25,7 @@ body {
 .sub-heading {
     color: white !important; /* Force la couleur du texte en blanc, même si un autre style est appliqué */
     font-size: 1.2rem; /* Ajuste la taille de la police selon tes préférences */
-    margin-bottom: 30px; /* Ajoute un espace en bas du texte */
+    margin-bottom: 50px; /* Ajoute un espace en bas du texte */
     font-weight: 300; /* Légèrement plus léger pour un effet subtil */
 }
 
@@ -88,7 +88,7 @@ body {
 .hero-content p {
     color: var(--light-text);
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
 }
 
