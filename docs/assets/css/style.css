@@ -199,3 +199,50 @@ body {
 }
 
 
+.rules-image {
+    flex: 1;
+    text-align: center; /* Center the image horizontally */
+}
+
+.rules-image img {
+    max-width: 70%; /* Ensure the image scales within its container */
+    height: auto;
+    border: none;
+    box-shadow: none; /* Optional: Add a subtle shadow */
+    max-height: 300px;
+}
+
+#user-input {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#user-answer {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4B2E2E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4B2E2E;
+}
+
+#feedback {
+    font-size: 14px;
+    color: #333;
+}
+
