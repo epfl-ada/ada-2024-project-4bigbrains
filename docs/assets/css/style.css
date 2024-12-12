@@ -158,11 +158,12 @@ body {
     text-align: center;
     margin-bottom: 50px;
     border-bottom: 2px solid #ccc;
+
 }
 
 .clue-section h2 {
     font-size: 2.5rem;  /* Taille du texte */
-    color: #333; /* Assurez-vous que la couleur est bien sombre et visible */
+    color: #4B2E2E; /* Assurez-vous que la couleur est bien sombre et visible */
     font-weight: bold; /* Mettre les titres en gras */
     margin-bottom: 20px; /* Espacement sous le titre */
 }
@@ -178,4 +179,23 @@ body {
 /* Plot Container */
 .plot-container {
     margin-top: 30px;
+    text-align: center;
 }
+
+
+
+.plot-container iframe {
+    margin: 0 auto; /* Centers the iframe inside the container */
+    display: block; /* Ensures proper block-level centering */
+    width: 100%; /* Adjust width for better appearance */
+}
+
+.plot-description {
+    margin-top: 10px; /* Add space above the text */
+    text-align: center; /* Center the text below the graph */
+    font: Helvetica;
+    font-size: 16px; /* Adjust font size */
+    color: #4B2E2E; /* Subtle color for descriptive text */
+}
+
+
