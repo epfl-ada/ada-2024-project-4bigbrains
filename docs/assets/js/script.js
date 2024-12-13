@@ -1,3 +1,62 @@
+// Script for the button of Clue 1
+document.getElementById('answer-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents form from reloading the page
+
+    const userAnswer = document.getElementById('user-answer').value.trim();
+    const correctAnswer = "USAIUKJAI"; // Correct answer
+    const feedback = document.getElementById('feedback');
+
+    // Check if the answer matches
+    if (userAnswer === "") {
+        feedback.textContent = "Please enter a valid answer.";
+        feedback.style.color = "red";
+    } else if (userAnswer === correctAnswer) {
+        feedback.textContent = "Success! You've entered the correct answer. Keep it in mind until the end";
+        feedback.style.color = "green";
+    } else {
+        feedback.textContent = "Incorrect answer. Try again!";
+        feedback.style.color = "red";
+    }
+});
+
+// Script for hint 1
+document.getElementById('hint1-text').addEventListener('click', function() {
+    this.classList.toggle('unblurred'); 
+});
+
+
+// Script for the button of Clue 2
+document.getElementById('answer-form2').addEventListener('submit', function(event) {
+    // Empêcher le rechargement de la page par défaut
+    event.preventDefault();
+
+    // Récupérer la réponse de l'utilisateur
+    const userAnswer = document.getElementById('user-answer2').value.trim();
+    
+    // Spécifier la bonne réponse (par exemple, "solution")
+    const correctAnswer = "130894"; 
+
+    // Vérifier la réponse
+    const feedback2 = document.getElementById('feedback2');
+    
+    // Check if the answer matches
+    if (userAnswer === "") {
+        feedback2.textContent = "Please enter a valid answer.";
+        feedback2.style.color = "red";
+    } else if (userAnswer === correctAnswer) {
+        feedback2.textContent = "Success! You've entered the correct answer. Keep it in mind until the end";
+        feedback2.style.color = "green";
+    } else {
+        feedback2.textContent = "Incorrect answer. Try again!";
+        feedback2.style.color = "red";
+    }
+});
+
+// Script for hint 2
+document.getElementById('hint2-text').addEventListener('click', function() {
+    this.classList.toggle('unblurred'); 
+});
+
 // Example of a Plotly plot in script.js
 Plotly.newPlot('plot1', [{
     x: [1, 2, 3, 4, 5],

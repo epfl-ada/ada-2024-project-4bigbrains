@@ -63,6 +63,7 @@
                 </div>
                 <p class="plot-description">
                     This barplot shows the main global movies producer is the USA. Their industry is really developped compared to the rest of the world. There are producing at least 4 times more movies than the second biggest producer which is India.
+                    It seems that USA, India, UK, Japan and Argentina are the top representatives for their region, let's find the one for Africa.
             </div>
 
 
@@ -70,17 +71,19 @@
             
             <!-- Plot 2 -->
             <div class="plot-container">
-                <p>Analyze the amount a money generated with the film industry:</p>
+                <p>Let's analyze the amount a money generated with the film industry to confirm our previous findings </p>
                 <div id="plot2">
                     <iframe src="assets/graphs/average_revenue_by_countries.html" width="70%" height="700" style="border:none;"></iframe>
                 </div>
                 <p class="plot-description"></p>
-                This distribution is in log scale because the values of box office revenues are extremely different depending on the different countries
-This distribution is very different than the previous one. It tells us that the contries that produce the more movies are not ones making the more money with this industry. For example, India is the second producer but is also the country that makes the least money for each film compared to the 18 biggest producers in the world. The wealthiest countries are the countries with the highest box offices per movie independantely of the level of production.
+                This distribution is in log scale because the values of box office revenues are extremely different depending on the different countries.
+                This distribution is very different than the previous one. It tells us that the contries that produce the more movies are not ones making the more money with this industry. For example, India is the second producer but is also the country that makes the least money for each film compared to the 18 biggest producers in the world. The wealthiest countries are the countries with the highest box offices per movie independantely of the level of production.
+                <br>
+                However, There is still no country for Africa aarhhg. Let takes a closer look at Iran, to see if it can match with the other countries.
             </div>
 
             <div class="plot-container">
-                <p>Explore the map below to uncover the top cinematic representatives:</p>
+                <p>Let's take a closer look at the distribution of the box office movie revenues for our selected countries :</p>
                 <div id="plot1">
                     <iframe src="assets/graphs/movies_boxofficerevenue_countries.html" width="70%" height="700" style="border:none;"></iframe>
                 </div>
@@ -92,16 +95,36 @@ This distribution is very different than the previous one. It tells us that the 
                     Argentina is the 7 country with the highest nb of films produced, after USA, India, UK and Japan. However, we can observe that in mean, it has a highest movie box office revenue per film than these countries. It also has a lower difference between first and third quartile. However it has just one outliers with a abnormaly high movie box office revenue. 
                     
                     Iran is the country with the lowest number of film produced and also, in average, the lowest movie box office revenue. Nonetheless, it has the lowest gap between whiskers meaning that the distribution of the box office revenue per film is consistent.</p>
-                    <!-- Placeholder for Plotly or Chart.js visualization -->
+
+                <br>
+                <p> USA, India, UK, Japan, Argentina and Iran seem to be goood representatives of the movie film industry of their regions.</p>
             </div>
 
-            
+        <!-- Plot 3 -->
+        <div class="plot-container" style="text-align: center;">
+            <p>Let's do the final check and examine the timeline of cinema evolution across them:</p>
+            <div id="plot3">
+                <iframe src="assets/graphs/nb_movies_year.html" width="100%" height="800" style="border:none;" scrolling="no"></iframe>
+            </div>
+            <p class="plot-description"></p>
+            The global trend that we see on the 6 graphs is an increase of the movie production between 1890 and 2007. We can interprate those result and estimate that the advancement of new technologies worldwide are the major cause of this increase.
 
+            We can observe a drop in the american movie production around 1915 which coincides with World War I. It did not really affected the UK because their movie production was very low at that time. India, Argentina, Iran and Japan was not involved in World War I. Concerning World War II the observation is a bit different. We notice a huge decrease of number of movie for the UK and Argentina around 1939-1945 and a less important one for the USA. UK and USA were directly involved in the World War II while Argentina had the influence of Germany and Italy. Moreover, the number of movies produced per yer before 1940 for Japan is very low but we can observe that this number increases a lot after World War II. 
+
+            Around 2007, we discern a fall of prodcution for the 6 countries. This date corresponds to the appearance of Netflix, a platform that offers a streaming service of movies, series. People can access to huge number of movies very easily without having to go to cinema theatres. 2008 economic crisis could also have an impact on this production of movies.
+            <br>
+            <p> Okay now we are all agree to say that USA, India, UK, Japan, Argentina and Iran are the top representatives countries of film industry for their region.
+                Let's see if the clue is linked to them !
+            </p>
+        </div>
         </section>
-
         <section id="user-input" class="clue-section">
             <h2>Enter Your Answer</h2>
             <p>Think you've figured out the clue? Enter your answer below:</p>
+            <section id="hint1">
+                <p><span class="hint-label">Hint:</span> <span id="hint1-text" class="blurred-text">Concatenate the initials of the selected countries.</span></p>
+            </section>
+           
             <form id="answer-form">
                 <input type="text" id="user-answer" placeholder="Enter your answer here..." required>
                 <button type="submit">Submit</button>
@@ -119,22 +142,6 @@ This distribution is very different than the previous one. It tells us that the 
             <h2>Clue 2: Time Evolution</h2>
             <p>"Time weaves its tale, revealing the evolution of cinema across eras. Trace the journey through the years to uncover how the silver screen transformed across regions."</p>
 
-
-            <!-- Plot 3 -->
-            <div class="plot-container" style="text-align: center;">
-                <p>Examine the timeline of cinema evolution across continents:</p>
-                <div id="plot3">
-                    <iframe src="assets/graphs/nb_movies_year.html" width="100%" height="800" style="border:none;" scrolling="no"></iframe>
-                </div>
-                <p class="plot-description"></p>
-                The global trend that we see on the 6 graphs is an increase of the movie production between 1890 and 2007. We can interprate those result and estimate that the advancement of new technologies worldwide are the major cause of this increase.
-
-    We can observe a drop in the american movie production around 1915 which coincides with World War I. It did not really affected the UK because their movie production was very low at that time. India, Argentina, Iran and Japan was not involved in World War I. Concerning World War II the observation is a bit different. We notice a huge decrease of number of movie for the UK and Argentina around 1939-1945 and a less important one for the USA. UK and USA were directly involved in the World War II while Argentina had the influence of Germany and Italy. Moreover, the number of movies produced per yer before 1940 for Japan is very low but we can observe that this number increases a lot after World War II. 
-
-    Around 2007, we discern a fall of prodcution for the 6 countries. This date corresponds to the appearance of Netflix, a platform that offers a streaming service of movies, series. People can access to huge number of movies very easily without having to go to cinema theatres. 2008 economic crisis could also have an impact on this production of movies.
-            </div>
-
-
             <!-- Plot 2 -->
             <div class="plot-container">
                 <p>Analyze the amount a money generated with the film industry:</p>
@@ -147,14 +154,17 @@ This distribution is very different than the previous one. It tells us that the 
 
         </section>
 
-        <section id="user-input" class="clue-section">
+        <section id="user-input2" class="clue-section">
             <h2>Enter Your Answer</h2>
             <p>Think you've figured out the clue? Enter your answer below:</p>
-            <form id="answer-form">
-                <input type="text" id="user-answer" placeholder="Enter your answer here..." required>
+            <section id="hint2">
+                <p><span class="hint-label">Hint:</span> <span id="hint2-text" class="blurred-text">Add all the coefficients with significant coefficiant (in millions of $).</span></p>
+            </section>
+            <form id="answer-form2">
+                <input type="text" id="user-answer2" placeholder="Enter your answer here..." required>
                 <button type="submit">Submit</button>
             </form>
-            <p id="feedback" style="margin-top: 10px;"></p>
+            <p id="feedback2" style="margin-top: 10px;"></p>
         </section>
 
 
@@ -215,28 +225,5 @@ This distribution is very different than the previous one. It tells us that the 
     </footer>
 
     <script src="assets/js/script.js"></script>
-
-    <script>
-        document.getElementById('answer-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevents form from reloading the page
-
-            const userAnswer = document.getElementById('user-answer').value.trim();
-            const correctAnswer = "USAIUKJAI"; // Correct answer
-            const feedback = document.getElementById('feedback');
-
-            // Check if the answer matches
-            if (userAnswer === "") {
-                feedback.textContent = "Please enter a valid answer.";
-                feedback.style.color = "red";
-            } else if (userAnswer === correctAnswer) {
-                feedback.textContent = "Success! You've entered the correct answer. Keep it in mind until the end";
-                feedback.style.color = "green";
-            } else {
-                feedback.textContent = "Incorrect answer. Try again!";
-                feedback.style.color = "red";
-            }
-        });
-    </script>
-    
 </body>
 </html>
