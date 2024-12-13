@@ -25,7 +25,7 @@ body {
 .sub-heading {
     color: white !important; /* Force la couleur du texte en blanc, même si un autre style est appliqué */
     font-size: 1.2rem; /* Ajuste la taille de la police selon tes préférences */
-    margin-bottom: 30px; /* Ajoute un espace en bas du texte */
+    margin-bottom: 50px; /* Ajoute un espace en bas du texte */
     font-weight: 300; /* Légèrement plus léger pour un effet subtil */
 }
 
@@ -88,7 +88,7 @@ body {
 .hero-content p {
     color: var(--light-text);
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -158,11 +158,12 @@ body {
     text-align: center;
     margin-bottom: 50px;
     border-bottom: 2px solid #ccc;
+
 }
 
 .clue-section h2 {
     font-size: 2.5rem;  /* Taille du texte */
-    color: #333; /* Assurez-vous que la couleur est bien sombre et visible */
+    color: #4B2E2E; /* Assurez-vous que la couleur est bien sombre et visible */
     font-weight: bold; /* Mettre les titres en gras */
     margin-bottom: 20px; /* Espacement sous le titre */
 }
@@ -178,4 +179,70 @@ body {
 /* Plot Container */
 .plot-container {
     margin-top: 30px;
+    text-align: center;
 }
+
+
+
+.plot-container iframe {
+    margin: 0 auto; /* Centers the iframe inside the container */
+    display: block; /* Ensures proper block-level centering */
+    width: 100%; /* Adjust width for better appearance */
+}
+
+.plot-description {
+    margin-top: 10px; /* Add space above the text */
+    text-align: center; /* Center the text below the graph */
+    font: Helvetica;
+    font-size: 16px; /* Adjust font size */
+    color: #4B2E2E; /* Subtle color for descriptive text */
+}
+
+
+.rules-image {
+    flex: 1;
+    text-align: center; /* Center the image horizontally */
+}
+
+.rules-image img {
+    max-width: 70%; /* Ensure the image scales within its container */
+    height: auto;
+    border: none;
+    box-shadow: none; /* Optional: Add a subtle shadow */
+    max-height: 300px;
+}
+
+#user-input {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#user-answer {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4B2E2E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4B2E2E;
+}
+
+#feedback {
+    font-size: 14px;
+    color: #333;
+}
+
