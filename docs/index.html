@@ -84,7 +84,7 @@
 
             <div class="plot-container">
                 <p>Let's take a closer look at the distribution of the box office movie revenues for our selected countries :</p>
-                <div id="plot1">
+                <div id="plot3">
                     <iframe src="assets/graphs/movies_boxofficerevenue_countries.html" width="70%" height="700" style="border:none;"></iframe>
                 </div>
                 <p class="plot-description">
@@ -100,24 +100,28 @@
                 <p> USA, India, UK, Japan, Argentina and Iran seem to be goood representatives of the movie film industry of their regions.</p>
             </div>
 
-        <!-- Plot 3 -->
-        <div class="plot-container" style="text-align: center;">
-            <p>Let's do the final check and examine the timeline of cinema evolution across them:</p>
-            <div id="plot3">
-                <iframe src="assets/graphs/nb_movies_year.html" width="100%" height="800" style="border:none;" scrolling="no"></iframe>
+
+                    <!-- Plot 3 -->
+            <div class="plot-container" style="text-align: center;">
+                <p>Let's do the final check and examine the timeline of cinema evolution across them:</p>
+                <div id="plot4">
+                    <iframe src="assets/graphs/nb_movies_year.html" width="100%" height="800" style="border:none;" scrolling="no"></iframe>
+                </div>
+                <p class="plot-description"></p>
+                The global trend that we see on the 6 graphs is an increase of the movie production between 1890 and 2007. We can interprate those result and estimate that the advancement of new technologies worldwide are the major cause of this increase.
+
+                We can observe a drop in the american movie production around 1915 which coincides with World War I. It did not really affected the UK because their movie production was very low at that time. India, Argentina, Iran and Japan was not involved in World War I. Concerning World War II the observation is a bit different. We notice a huge decrease of number of movie for the UK and Argentina around 1939-1945 and a less important one for the USA. UK and USA were directly involved in the World War II while Argentina had the influence of Germany and Italy. Moreover, the number of movies produced per yer before 1940 for Japan is very low but we can observe that this number increases a lot after World War II. 
+
+                Around 2007, we discern a fall of prodcution for the 6 countries. This date corresponds to the appearance of Netflix, a platform that offers a streaming service of movies, series. People can access to huge number of movies very easily without having to go to cinema theatres. 2008 economic crisis could also have an impact on this production of movies.
+                <br>
+                <p> Okay now we are all agree to say that USA, India, UK, Japan, Argentina and Iran are the top representatives countries of film industry for their region.
+                    Let's see if the clue is linked to them !
+                </p>
             </div>
-            <p class="plot-description"></p>
-            The global trend that we see on the 6 graphs is an increase of the movie production between 1890 and 2007. We can interprate those result and estimate that the advancement of new technologies worldwide are the major cause of this increase.
+            </section>
 
-            We can observe a drop in the american movie production around 1915 which coincides with World War I. It did not really affected the UK because their movie production was very low at that time. India, Argentina, Iran and Japan was not involved in World War I. Concerning World War II the observation is a bit different. We notice a huge decrease of number of movie for the UK and Argentina around 1939-1945 and a less important one for the USA. UK and USA were directly involved in the World War II while Argentina had the influence of Germany and Italy. Moreover, the number of movies produced per yer before 1940 for Japan is very low but we can observe that this number increases a lot after World War II. 
 
-            Around 2007, we discern a fall of prodcution for the 6 countries. This date corresponds to the appearance of Netflix, a platform that offers a streaming service of movies, series. People can access to huge number of movies very easily without having to go to cinema theatres. 2008 economic crisis could also have an impact on this production of movies.
-            <br>
-            <p> Okay now we are all agree to say that USA, India, UK, Japan, Argentina and Iran are the top representatives countries of film industry for their region.
-                Let's see if the clue is linked to them !
-            </p>
-        </div>
-        </section>
+
         <section id="user-input" class="clue-section">
             <h2>Enter Your Answer</h2>
             <p>Think you've figured out the clue? Enter your answer below:</p>
@@ -139,17 +143,29 @@
 
         <!-- Clue 2 Section -->
         <section id="clue2" class="clue-section">
-            <h2>Clue 2: Time Evolution</h2>
-            <p>"Time weaves its tale, revealing the evolution of cinema across eras. Trace the journey through the years to uncover how the silver screen transformed across regions."</p>
+            <h2>Clue 2: GPD impact</h2>
+            <p> "As economies rose and fell, the silver screen reflected their fortunes, weaving a tale of cinema's evolution shaped by the ebb and flow of global GDP."</p>
+
+
+            <br>
+            <p> First, we performed a Pearson correlation to estimate the direct impact of GDP of the countries on the total box office revenue. Here are the results :</p>
+            <p style="font-size: 20px;"> Correlation coefficient = 0,09</p>
+            <p style="font-size: 20px;"> P-value = 4 × 10<sup>-19</sup></p>
+            <p>There is a small but significant correlation between Movie box office revenue and GDP</p>
+            <br>
+            <p> Then, we performed a Pearson correlation to estimate the direct impact of GDP of the countries on the number of film produced. Here are the results :</p>
+            <p style="font-size: 20px;"> Correlation coefficient = 0,23</p>
+            <p style="font-size: 20px;"> P-value = 0,32</p>
+            <p>TThe correlation between the number of film produced and the GDP is not significant. </p>
 
             <!-- Plot 2 -->
             <div class="plot-container">
-                <p>Analyze the amount a money generated with the film industry:</p>
-                <div id="plot2">
-                    <iframe src="assets/graphs/linearregression_model.html" width="70%" height="700" style="border:none;"></iframe>
+                <p>Let's evaluate the importance of different features in the total box office</p>
+                <div id="plot1">
+                    <iframe src="assets/graphs/regression_coefficients.html" width="70%" height="700" style="border:none;"></iframe>
                 </div>
-                <p class="plot-description"></p>
-                the features that are significant
+                <p class="plot-description">The 3 features that are not significant are the movie genres romance, drama and crime. We notice that their coefficient has a small absolute value.. We can observe that the coefficient of GDP is large and positive which means that the wealthier are the countries the more their more industry is developped.
+                </p>
             </div>
 
         </section>
@@ -172,17 +188,27 @@
 
         <!-- Clue 3 Section -->
         <section id="clue3" class="clue-section">
-            <h2>Clue 3: Where Films Rake in Riches</h2>
-            <p>"Where there’s gold, there’s a story. Find the lands where films rake in riches."</p>
-            <h3>Research Question:</h3>
-            <p>Which regions generate the highest box office revenues, and how does this relate to their production volume?</p>
+            <h2>Clue 3: Actors gender</h2>
+            <p>"Where there’s talent, there’s a story. Discover how the gender of actors shapes the narrative."</p>
             <div class="plot-container">
-                <h3>Data Visualization</h3>
-                <p>Explore box office revenue patterns:</p>
-                <div id="plot3">
-                    <!-- Placeholder for Plotly or Chart.js visualization -->
+                <p>Let's evaluate the importance of different features in the total box office</p>
+                <div id="plot1">
+                    <iframe src="assets/graphs/actor_gender_plots.html" width="100%" height="700" style="border:none;" scrolling="no"></iframe>
                 </div>
+                <p class="plot-description">Concerning the USA, India, the UK and Japan we notice that the gender distribution is in favor of males, with on average 60% of actors and 40% of actresses in the movies throughout the years. Since 1940, the distribution did not really change, we observe a plateau in the curve of those 4 countries, the ratio is staying approximetaly the same. No countries put real efforts in establishing gender euquality in their movie industry. Concerning Argentina and Iran, the results are oscillating a lot, we cannot observe any trend. We think that there are not enough data to draw conclusions.
+                </p>
             </div>
+
+            <br>
+            <p> The Pearson correlation estimates if the ratio of female/male actors is significant ofr the success of a mive. Here are the results :</p>
+            <p style="font-size: 20px;"> Correlation coefficient = 0,24</p>
+            <p style="font-size: 20px;"> P-value = 1,31 × 10<sup>-57</sup></p>
+            <p>The P-value is really small. There is a significant relation between the ratio and the box office revenue, however it is probably not linear. </p>
+            <br>
+            <p>Once we knew that the correlation was significant we tried te find the optimal ratio for success. We performed a linear regression of degree 2, found the value of x corresponding to df/dx = 0. It corresponds to -b/2a. In the case of the curve of box office revenues in terms of ratios the value of x = 10,47.
+
+                To maximise the chance to produce a blockbuster, the number of actors should be 10 times higher than the number of actresses.</p>
+
         </section>
 
         <!-- Clue 4 Section -->
