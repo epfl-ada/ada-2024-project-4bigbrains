@@ -24,9 +24,8 @@ body {
 /* Style spécifique à .sub-heading */
 .sub-heading {
     color: white !important; /* Force la couleur du texte en blanc, même si un autre style est appliqué */
-    font-size: 1.2rem; /* Ajuste la taille de la police selon tes préférences */
+    font-size: 1rem; /* Ajuste la taille de la police selon tes préférences */
     margin-bottom: 50px; /* Ajoute un espace en bas du texte */
-    font-weight: 300; /* Légèrement plus léger pour un effet subtil */
 }
 
 @font-face {
@@ -135,6 +134,9 @@ body {
     z-index: 10;
 }
 
+
+
+
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -154,8 +156,11 @@ body {
 
 /* Clue Sections */
 .clue-section {
-    padding: 50px 10%;
-    text-align: center;
+    max-width: 900px; /* Limit the width of the box */
+    margin: 0 auto;   /* Center the box */
+    padding: 20px;    /* Space inside the box */
+    text-align: justify;      /* Justify all text padding: 50px 10%;text-align: center;*/
+    
     margin-bottom: 50px;
     border-bottom: 2px solid #ccc;
 
@@ -180,7 +185,6 @@ body {
 /* Plot Container */
 .plot-container {
     margin-top: 30px;
-    text-align: center;
 }
 
 
@@ -193,7 +197,6 @@ body {
 
 .plot-description {
     margin-top: 10px; /* Add space above the text */
-    text-align: center; /* Center the text below the graph */
     font: Helvetica;
     font-size: 16px; /* Adjust font size */
     color: #4B2E2E; /* Subtle color for descriptive text */
