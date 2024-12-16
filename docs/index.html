@@ -34,7 +34,7 @@
             <a href="#rules" class="btn-primary">Start the Hunt</a>
         </div>
     </header>
-    
+
     <!-- Main Content Section -->
     <main class="main-content">
 
@@ -42,7 +42,7 @@
             <div class="rules-content">
                 <div class="rules-text">
                     <h2>Rules of the Hunt</h2>
-                    <p>The 5th Big Brain, the most enigmatic member of the group, vanished without a trace. Known for his unparalleled insight into the world of cinema, he left behind a series of cryptic clues, scattered across the global cinematic landscape. These clues are not just a breadcrumb trail—they are a challenge, a treasure map leading the 4BigBrains on an extraordinary journey to rediscover the cultural essence of film. Are you ready to join the Cinematic Treasure Hunt: A Global Quest to Unearth the Hidden Gems of the Film Industry.</p>   
+                    <p>The 5th Big Brain, the most enigmatic member of the group, vanished without a trace. Known for his unparalleled insight into the world of cinema, he left behind a series of cryptic clues, scattered across the global cinematic landscape. These clues are not just a breadcrumb trail—they are a challenge, a treasure map leading the 4BigBrains on an extraordinary journey to rediscover the cultural essence of film. Are you ready to join the Cinematic Treasure Hunt: A Global Quest to Unearth the Hidden Gems of the Film Industry.</p>
                     <p>Before diving into the game, you must know how to play.</p>
                     <p>Each clue will help you find the character string. At the end, you will need to concatenate all the strings to compose the code of the treasure chest.</p>
                 </div>
@@ -51,12 +51,12 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Clue 1 Section -->
         <section id="clue1" class="clue-section">
             <h2>Clue 1: Top representatives</h2>
             <p>"The world is vast, but which lands stand out on the cinematic map? Seek out the top representatives from each region."</p>
-            
+
             <!-- Plot 1 -->
             <div class="plot-container">
                 <div id="plot1">
@@ -68,8 +68,8 @@
             </div>
 
 
-            
-            
+
+
             <!-- Plot 2 -->
             <div class="plot-container">
                 <p>Let's analyze the amount a money generated with the film industry to confirm our previous findings </p>
@@ -89,20 +89,21 @@
                     <iframe src="assets/graphs/movies_boxofficerevenue_countries.html" width="70%" height="700" style="border:none;"></iframe>
                 </div>
                 <p class="plot-description">
-                    India is the second country with the highest number of films produced however the boxplot shows that the movie box office revenue per film is lower than UK, Japan or Argentina even if these countries produce less films. 
+                    India is the second country with the highest number of films produced however the boxplot shows that the movie box office revenue per film is lower than UK, Japan or Argentina even if these countries produce less films.
 
-                    USA is still the first country and there are a lot of outliers with a high movie box office revenue. 
-                    
-                    Argentina is the 7 country with the highest nb of films produced, after USA, India, UK and Japan. However, we can observe that in mean, it has a highest movie box office revenue per film than these countries. It also has a lower difference between first and third quartile. However it has just one outliers with a abnormaly high movie box office revenue. 
-                    
-                    Iran is the country with the lowest number of film produced and also, in average, the lowest movie box office revenue. Nonetheless, it has the lowest gap between whiskers meaning that the distribution of the box office revenue per film is consistent.</p>
+                    USA is still the first country and there are a lot of outliers with a high movie box office revenue.
+
+                    Argentina is the 7 country with the highest nb of films produced, after USA, India, UK and Japan. However, we can observe that in mean, it has a highest movie box office revenue per film than these countries. It also has a lower difference between first and third quartile. However it has just one outliers with a abnormaly high movie box office revenue.
+
+                    Iran is the country with the lowest number of film produced and also, in average, the lowest movie box office revenue. Nonetheless, it has the lowest gap between whiskers meaning that the distribution of the box office revenue per film is consistent.
+                </p>
 
                 <br>
                 <p> USA, India, UK, Japan, Argentina and Iran seem to be goood representatives of the movie film industry of their regions.</p>
             </div>
 
 
-                    <!-- Plot 3 -->
+            <!-- Plot 3 -->
             <div class="plot-container">
                 <p>Let's do the final check and examine the timeline of cinema evolution across them:</p>
                 <div id="plot4">
@@ -111,15 +112,16 @@
                 <p class="plot-description"></p>
                 The global trend that we see on the 6 graphs is an increase of the movie production between 1890 and 2007. We can interprate those result and estimate that the advancement of new technologies worldwide are the major cause of this increase.
 
-                We can observe a drop in the american movie production around 1915 which coincides with World War I. It did not really affected the UK because their movie production was very low at that time. India, Argentina, Iran and Japan was not involved in World War I. Concerning World War II the observation is a bit different. We notice a huge decrease of number of movie for the UK and Argentina around 1939-1945 and a less important one for the USA. UK and USA were directly involved in the World War II while Argentina had the influence of Germany and Italy. Moreover, the number of movies produced per yer before 1940 for Japan is very low but we can observe that this number increases a lot after World War II. 
+                We can observe a drop in the american movie production around 1915 which coincides with World War I. It did not really affected the UK because their movie production was very low at that time. India, Argentina, Iran and Japan was not involved in World War I. Concerning World War II the observation is a bit different. We notice a huge decrease of number of movie for the UK and Argentina around 1939-1945 and a less important one for the USA. UK and USA were directly involved in the World War II while Argentina had the influence of Germany and Italy. Moreover, the number of movies produced per yer before 1940 for Japan is very low but we can observe that this number increases a lot after World War II.
 
                 Around 2007, we discern a fall of prodcution for the 6 countries. This date corresponds to the appearance of Netflix, a platform that offers a streaming service of movies, series. People can access to huge number of movies very easily without having to go to cinema theatres. 2008 economic crisis could also have an impact on this production of movies.
                 <br>
-                <p> Okay now we are all agree to say that USA, India, UK, Japan, Argentina and Iran are the top representatives countries of film industry for their region.
+                <p>
+                    Okay now we are all agree to say that USA, India, UK, Japan, Argentina and Iran are the top representatives countries of film industry for their region.
                     Let's see if the clue is linked to them !
                 </p>
             </div>
-            </section>
+        </section>
 
 
 
@@ -129,7 +131,7 @@
             <section id="hint1">
                 <p><span class="hint-label">Hint:</span> <span id="hint1-text" class="blurred-text">Concatenate the initials of the selected countries.</span></p>
             </section>
-           
+
             <form id="answer-form">
                 <input type="text" id="user-answer" placeholder="Enter your answer here..." required>
                 <button type="submit">Submit</button>
@@ -138,7 +140,7 @@
         </section>
 
 
-    
+
 
 
 
@@ -165,7 +167,8 @@
                 <div id="plot1">
                     <iframe src="assets/graphs/regression_coefficients.html" width="70%" height="700" style="border:none;"></iframe>
                 </div>
-                <p class="plot-description">The 3 features that are not significant are the movie genres romance, drama and crime. We notice that their coefficient has a small absolute value.. We can observe that the coefficient of GDP is large and positive which means that the wealthier are the countries the more their more industry is developped.
+                <p class="plot-description">
+                    The 3 features that are not significant are the movie genres romance, drama and crime. We notice that their coefficient has a small absolute value.. We can observe that the coefficient of GDP is large and positive which means that the wealthier are the countries the more their more industry is developped.
                 </p>
             </div>
 
@@ -196,7 +199,8 @@
                 <div id="plot1">
                     <iframe src="assets/graphs/actor_gender_plots.html" width="100%" height="700" style="border:none;" scrolling="no"></iframe>
                 </div>
-                <p class="plot-description">Concerning the USA, India, the UK and Japan we notice that the gender distribution is in favor of males, with on average 60% of actors and 40% of actresses in the movies throughout the years. Since 1940, the distribution did not really change, we observe a plateau in the curve of those 4 countries, the ratio is staying approximetaly the same. No countries put real efforts in establishing gender euquality in their movie industry. Concerning Argentina and Iran, the results are oscillating a lot, we cannot observe any trend. We think that there are not enough data to draw conclusions.
+                <p class="plot-description">
+                    Concerning the USA, India, the UK and Japan we notice that the gender distribution is in favor of males, with on average 60% of actors and 40% of actresses in the movies throughout the years. Since 1940, the distribution did not really change, we observe a plateau in the curve of those 4 countries, the ratio is staying approximetaly the same. No countries put real efforts in establishing gender euquality in their movie industry. Concerning Argentina and Iran, the results are oscillating a lot, we cannot observe any trend. We think that there are not enough data to draw conclusions.
                 </p>
             </div>
 
@@ -206,9 +210,11 @@
             <p style="font-size: 20px;"> P-value = 1,31 × 10<sup>-57</sup></p>
             <p>The P-value is really small. There is a significant relation between the ratio and the box office revenue, however it is probably not linear. </p>
             <br>
-            <p>Once we knew that the correlation was significant we tried te find the optimal ratio for success. We performed a linear regression of degree 2, found the value of x corresponding to df/dx = 0. It corresponds to -b/2a. In the case of the curve of box office revenues in terms of ratios the value of x = 10,47.
+            <p>
+                Once we knew that the correlation was significant we tried te find the optimal ratio for success. We performed a linear regression of degree 2, found the value of x corresponding to df/dx = 0. It corresponds to -b/2a. In the case of the curve of box office revenues in terms of ratios the value of x = 10,47.
 
-                To maximise the chance to produce a blockbuster, the number of actors should be 10 times higher than the number of actresses.</p>
+                To maximise the chance to produce a blockbuster, the number of actors should be 10 times higher than the number of actresses.
+            </p>
 
         </section>
 
@@ -229,28 +235,515 @@
 
         <!-- Clue 5 Section -->
         <section id="clue5" class="clue-section">
-            <h2>Clue 5: The Stories They Dream About</h2>
-            <p>"Look closer at the stories themselves; what do different lands dream about?"</p>
-            <h3>Research Question:</h3>
-            <p>What storytelling themes dominate in different regions, and how do these vary by genre?</p>
-            <div class="plot-container">
-                <h3>Data Visualization</h3>
-                <p>Discover storytelling patterns:</p>
-                <div id="plot5">
-                    <!-- Placeholder for Plotly or Chart.js visualization -->
-                </div>
+            <div class="page-body">
+                <p id="77446bd3-02aa-4623-bc7e-4230dd08731f" class=""></p>
+                <h2 id="47d3b06a-d4be-491b-b2df-fb6c02ef8292" class=""><strong>Clue 5: The Stories They Dream About</strong></h2>
+                <p id="34328d13-7651-4258-8957-d9641cda0fe4" class="">
+                    &quot;Look closer at the stories themselves; what do different lands dream about?&quot;
+                </p>
+                <h3 id="820270c8-2109-408b-af33-5f99e13c6ba0" class="">Research Question: What storytelling themes dominate in different regions, and how do these vary by genre?</h3>
+                <h3 id="2c825a3e-8250-4342-a067-64dc4f535e23" class=""><strong>Deciphering the Clue</strong></h3>
+                <p id="9df5dd39-5c9a-456c-a215-2db068857da3" class="">
+                    This clue invites us to explore the stories told across different parts of the world. What do these stories reveal about each region? What kinds of narratives are shared, and how do they differ? To answer these questions, we need a clear and systematic way to identify and compare the main ideas within these stories.
+                </p>
+                <hr id="801b68c5-be29-45fe-88d1-380fde2782aa" />
+                <h3 id="a099edb0-3927-4b50-9140-ece2ed085161" class=""><strong>Method</strong></h3>
+                <p id="fe1110c2-6f05-43ac-b10e-0e1ace615fd7" class="">
+                    To uncover the topics in a collection of texts, we use
+                    <strong>Latent Dirichlet Allocation (LDA)</strong>
+                    . LDA is a method designed specifically for
+                    <strong>topic modeling</strong>
+                    . It looks at the patterns of words in documents and groups words that frequently occur together into
+                    <strong>topics</strong>
+                    . The idea is simple: each document is made up of a mix of topics, and each topic is described by a specific set of words.
+                </p>
+                <p id="4f1bc5ce-d483-4b90-aeaf-f9481fc8c797" class="">
+                    By applying LDA to movie plots, we can figure out which topics are most common in films from different countries. This helps us see what kinds of stories people focus on and how they vary from one place to another.
+                </p>
+                <p id="618e6fa4-7320-4422-a6c1-c2f06da8d235" class="">
+                    We’ll start by applying LDA to look at movies in a
+                    <strong>broad, general way</strong>
+                    , analyzing themes across all genres. This gives us a big-picture view of storytelling worldwide. But is that enough? Can broad themes really capture the cultural differences we’re looking for, or do we need to go further?
+                </p>
+                <p id="ea221b5e-7834-4d28-a164-206838dcde3e" class="">
+                    This first step will help us decide. Once we’ve identified the general themes, we can narrow our focus to specific genres to dig deeper and see what makes each region unique.
+                </p>
+                <hr id="2a629007-bde9-4561-89b8-c8de3d0f2f22" />
+                <h3 id="891fdc9c-2ade-475c-825d-7bd7bcd0414a" class=""><strong>General LDA Analysis</strong></h3>
+                <p id="f2cf78a9-c3bd-4b94-b3bf-65ea8c434331" class="">
+                    Like many machine learning models, LDA needs
+                    <strong>tuning</strong>
+                    to get the best results. In our case, the key parameter to tune is the
+                    <strong>number of topics</strong>
+                    . A good way to find the right number is to try models with different topic counts—say, from 2 to 5—and choose the one that gives us the
+                    <strong>most coherent topics</strong>
+                    . Coherence measures how interpretable and meaningful the topics are.
+                </p>
+                <p id="34b86665-9b03-4e17-8e0d-95d82b37eb0d" class="">
+                    But there’s a catch, isn’t there? Think about it: in cinema, there are countless topics—thankfully! So as we increase the number of topics, we might find that the coherence score keeps improving. Why? Because with more topics, the model gets more specific, breaking down themes into smaller, clearer pieces.
+                </p>
+                <figure id="6587e1ac-c6c4-477e-b678-e074f3ac5153" class="image">
+                    <a href="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image.png"><img style="width:707.984375px" src="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image.png" /></a>
+                </figure>
+                <p id="93cb5d11-9995-4be4-ac0c-da9de0373a85" class="">
+                    However, a more coherent model doesn’t always mean a better one. If we choose too many topics, the results become so specific that they’re hard to interpret. How are we supposed to understand 20 topics a make an interesting comparison?
+                </p>
+                <p id="0b521198-6d99-4ec9-82f3-0f926128178f" class="">
+                    To strike a balance, let’s focus on finding the
+                    <strong>most coherent model</strong>
+                    within the range of 2 to 5 topics. This will give us themes that are specific enough to be meaningful but broad enough to interpret easily.
+                </p>
+                <figure id="52c75a29-a887-4ae1-881d-50e02f005816" class="image">
+                    <a href="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%201.png"><img style="width:707.96875px" src="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%201.png" /></a>
+                </figure>
+                <p id="65e4d6c7-7a50-4ee8-9848-9cd67b00cac7" class="">
+                    No doubt, 4 topics is the perfect compromise between interpretability and coherence of the LDA model.
+                </p>
+                <p id="0d1c796c-753e-4ab7-a0ea-231d0d8b4fef" class="">
+                    To better understand each topic, we examined the
+                    <strong>top 10 most representative words</strong>
+                    associated with it. These words give us a clear sense of the recurring ideas within each theme. Additionally, we identified the
+                    <strong>movie most strongly associated</strong>
+                    with each topic, providing a concrete example of how the theme is reflected in cinema.
+                </p>
+                <p id="a88dc856-3a6e-4ee2-a1cc-b63b99c15b5d" class="">
+                    Here’s what we found:
+                </p>
+                <ul id="15ee6020-8a94-805f-8361-d9ad2ff5b746" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;father&quot;, “family&quot;, &quot;love&quot;, &quot;son&quot;, &quot;child&quot;, &quot;mother&quot;, &quot;marry&quot;, &quot;young&quot;, &quot;daughter&quot;, Best representative movie: Henry VIII</li>
+                </ul>
+                <ul id="15ee6020-8a94-806f-bd8d-fc60e3d68575" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;friend&quot;, &quot;love&quot;, &quot;money&quot;, &quot;home&quot;, &quot;time&quot;, &quot;father&quot;, &quot;school&quot;, &quot;mother&quot;, &quot;return&quot;, Best representative movie: Main Aur Mrs Khanna</li>
+                </ul>
+                <ul id="15ee6020-8a94-80ac-9f31-e0d8fea81231" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;police&quot;, &quot;house&quot;, &quot;car&quot;, &quot;shoot&quot;, &quot;head&quot;, &quot;murder&quot;, &quot;escape&quot;, &quot;body&quot;, &quot;night”, Best representative movie: Film, weird name right? Well it is indeed an American short film published in 1965 by Samuel Beckett: <a href="https://www.youtube.com/watch?v=BSnv6haPadM">Film - 1965 - Samuel Beckett</a></li>
+                </ul>
+                <ul id="15ee6020-8a94-80cf-a984-c97dec7f5eb7" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;escape&quot;, &quot;attack&quot;, &quot;ship&quot;, &quot;group&quot;, &quot;order&quot;,, &quot;force&quot;, &quot;destroy&quot;, &quot;fight&quot;, “soldier”, Best representative movie: Stargate</li>
+                </ul>
+                <p id="15ee6020-8a94-80fe-bc85-f0d6e2a1c4ed" class="">
+                    The four themes (topics 0, 1, 2, and 3) can be characterized as follows:
+                </p>
+                <p id="15ee6020-8a94-8057-bb58-d16a220b7c8b" class="">
+                    <strong>Topic 0:  Family and Love</strong>
+                </p>
+                <p id="15ee6020-8a94-80ea-99b9-c8f6afd23125" class="">
+                    <strong>Topic 1:  Relationships and Home Life</strong>
+                </p>
+                <p id="15ee6020-8a94-80c8-858e-cb5e9730c4b4" class="">
+                    <strong>Topic 2:  Crime and Thriller</strong>
+                </p>
+                <p id="15ee6020-8a94-8084-a8de-e518c7045700" class="">
+                    <strong>Topic 3:  Action and Adventure</strong>
+                </p>
+                <p id="f97e1be7-8c01-41dd-86ec-822ba4cea482" class="">
+                    These topics are a simplification of the LDA results, based on the most representative words and movies. This interpretation is inherently subjective, as each topic is a mix of ideas that cannot be fully captured by a single label, but it highly simplify our analysis so let’s make this simplification!
+                </p>
+                <p id="dfe4e9f7-7bfb-49a0-b320-5ae46a2cdfb3" class="">
+                    It is finally time to compare the repartition of topics between the focus countries:
+                </p>
+                <figure id="15ee6020-8a94-8066-a1dd-db491e1b8ec3" class="image">
+                    <a href="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%202.png"><img style="width:768px" src="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%202.png" /></a>
+                </figure>
+                <p id="15ee6020-8a94-80be-a430-d52e76f8ddb4" class="">
+                    <br />
+                    <br />
+                    The graph shows clear cultural differences in movie themes across six countries.
+                    <br />
+                    <strong>Family and Love (Topic 0)</strong>
+                    are prominent in India, Iran, and Argentina, reflecting a strong focus on emotional and familial storytelling. The United States and United Kingdom show a more balanced mix, with an emphasis on
+                    <strong>Relationships and Home Life (Topic 1)</strong>
+                    alongside elements of thrillers and action. Japan, on the other hand, stands out with a higher representation of
+                    <strong>Action and Adventure (Topic 3)</strong>
+                    , reflecting a preference for dynamic, group-driven narratives often seen in genres like anime and sci-fi.
+                    <br />
+                    <br />
+                    <br />
+                    These general themes give us a broad understanding of storytelling patterns across different regions, but they also raise new questions. Are these overarching topics enough to capture the cultural nuances in the stories told around the world? Or do the unique differences lie hidden within more
+                    <br />
+                    <strong>specific genres</strong>
+                    ?
+                    <br />
+                    To get a clearer picture, we’ll apply LDA to individual genres. This will help us find more precise themes and see how stories vary from one region to another.
+                    <br />
+                </p>
+                <h2 id="15ee6020-8a94-801c-8706-ef77028e6239" class=""><strong>Genre specific LDA analysis</strong></h2>
+                <p id="3873cc6b-4fd2-4275-91a7-e3f8092d2db6" class="">
+                    <strong>First, how do we decide which genres to analyze?</strong>
+                </p>
+                <p id="5430a92f-eb3e-4578-b4e3-9d01ba04a3a0" class="">
+                    To ensure unbiased results, we need a large enough sample size. For this, we focus on the movie genres in our dataset that contain more than 1,000 entries each:
+                </p>
+                <figure id="15ee6020-8a94-80d3-84d6-f2c6a622bb04" class="image">
+                    <a href="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%203.png"><img style="width:768px" src="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%203.png" /></a>
+                </figure>
+                <p id="15ee6020-8a94-80fb-a182-fc727c050a4d" class="">
+                    From this, we focus on the
+                    <strong>Thriller</strong>
+                    ,
+                    <strong>Drama</strong>
+                    , and
+                    <strong>Romance</strong>
+                    genres.
+                    <br />
+                    <br />
+                    <br />
+                    <strong>Secondly, how do we choose the number of topics for each genre?</strong>
+                    <br />
+                    We follow the same method as with the general LDA: testing different numbers of topics (e.g., 2 to 5) and selecting the number that maximizes the
+                    <br />
+                    <strong>coherence score</strong>
+                    . This ensures the topics are both coherent and interpretable for each genre:
+                </p>
+                <figure id="15ee6020-8a94-8004-8b59-eac1070a2098" class="image">
+                    <a href="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%204.png"><img style="width:768px" src="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%204.png" /></a>
+                </figure>
+                <p id="15ee6020-8a94-80d8-a5e5-d36f3b50effd" class="">
+                    <br />
+                    For
+                    <br />
+                    <strong>Romance</strong>
+                    , the coherence score peaks at
+                    <strong>3 topics</strong>
+                    before declining. In the case of
+                    <strong>Thriller</strong>
+                    , the score initially decreases but rises sharply at
+                    <strong>5 topics</strong>
+                    . Finally for
+                    <strong>Drama</strong>
+                    , the score reaches its highest point at
+                    <strong>4 topics</strong>
+                    before dropping, making 4 the optimal choice.
+                    <br />
+                    <br />
+                </p>
+                <p id="dd43d72b-3a87-4cf0-9a39-fd208a53180b" class="">
+                    <strong>What are the topics?</strong>
+                </p>
+                <p id="0a36a0c5-993f-4872-b110-66cec6417cad" class="">
+                    Thriller:
+                </p>
+                <ul id="15ee6020-8a94-8020-8844-f848c916f260" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;attack&quot;, &quot;car&quot;, &quot;body&quot;, “house&quot;, &quot;room&quot;, &quot;group&quot;, &quot;head&quot;, &quot;attempt&quot;, &quot;dead&quot;, &quot;die”<p id="214c2d1d-65c8-46ff-8137-cec1bc8e0024" class="">Best representative movie: White Of The Eye</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-80cd-af09-fc5ff33e5db6" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;woman&quot;, &quot;apartment&quot;, &quot;killer&quot;, &quot;case”, &quot;room&quot;, &quot;wife&quot;, &quot;house&quot;, &quot;home&quot;, &quot;night&quot;, &quot;shoot”<p id="29f84b77-b985-40b3-b8b7-456c86179109" class="">Best representative movie: ...And Justice for All</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-8010-a7d2-e7357c7a1b6d" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;order&quot;, &quot;agent&quot;, &quot;attempt&quot;, &quot;attack&quot;, &quot;force&quot;, &quot;bomb&quot;, &quot;group&quot;, &quot;destroy&quot;, &quot;team&quot;, &quot;mission”<p id="0c6d95a2-cad2-4bf6-98df-5ab5029de76b" class="">Best representative movie: Ghosts of Mars</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-807e-9e91-d8061979d6d1" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;shoot&quot;, &quot;car&quot;, &quot;money&quot;, &quot;gang&quot;, &quot;gun&quot;, &quot;officer&quot;, &quot;head&quot;, &quot;drug&quot;, &quot;steal&quot;, &quot;attempt”<p id="3903d664-e0a5-498a-bb5f-dc8cb5acab39" class="">Best representative movie: Perrier&#x27;s Bounty</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-80ee-81a3-e672cdd3cf0c" class="bulleted-list">
+                    <li style="list-style-type:disc">
+                        &quot;father&quot;, &quot;house&quot;, &quot;mother&quot;, &quot;family&quot;, “love&quot;, &quot;wife&quot;, &quot;home&quot;, &quot;child&quot;, &quot;son&quot;, &quot;young”
+                        <p id="6cf6b591-d7e5-4d19-a7ac-d4eb83f97846" class="">
+                            Best representative movie: Midnight Express
+                        </p>
+                        <p id="1cb76964-157b-494b-a632-8c1c63d1d44d" class=""></p>
+                    </li>
+                </ul>
+                <p id="15ee6020-8a94-804a-9f00-ccf7545ae9a5" class="">
+                    <strong>Topic 0</strong>
+                    focuses on violent incidents like
+                    <em>attacks</em>
+                    ,
+                    <em>bodies</em>
+                    , and
+                    <em>attempts</em>
+                    .
+                </p>
+                <p id="15ee6020-8a94-806e-99e6-cb5d5ee577cd" class="">
+                    <strong>Topic 1</strong>
+                    revolves around domestic settings and criminal investigations, with terms like
+                    <em>woman</em>
+                    ,
+                    <em>apartment</em>
+                    , and
+                    <em>killer</em>
+                    .
+                </p>
+                <p id="15ee6020-8a94-807d-99b1-f0d8d7343fa8" class="">
+                    <strong>Topic 2</strong>
+                    emphasizes organized operations, including
+                    <em>agents</em>
+                    ,
+                    <em>attacks</em>
+                    , and
+                    <em>missions</em>
+                    .
+                </p>
+                <p id="15ee6020-8a94-80c7-9253-d778a128c240" class="">
+                    <strong>Topic 3</strong>
+                    highlights themes of crime and gang activities, involving
+                    <em>shootings</em>
+                    ,
+                    <em>money</em>
+                    , and
+                    <em>drugs</em>
+                    .
+                </p>
+                <p id="15ee6020-8a94-80c4-8c92-e79fa237086d" class="">
+                    <strong>Topic 4</strong>
+                    centers on familial relationships, with words like
+                    <em>father</em>
+                    ,
+                    <em>mother</em>
+                    , and
+                    <em>family</em>
+                    .
+                    <br />
+                    <br />
+                    <br />
+                </p>
+                <figure id="15ee6020-8a94-8083-ac42-cb157898c6b7" class="image">
+                    <a href="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%205.png"><img style="width:816px" src="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%205.png" /></a>
+                </figure>
+                <p id="15ee6020-8a94-803b-a6f6-ff401fc7cbdd" class="">
+                    <br />
+                    From the graph,
+                    <br />
+                    <strong>Topic 4</strong>
+                    (family-oriented thrillers) is dominant in the
+                    <strong>United States, India, and Argentina</strong>
+                    , showing a preference for thrillers intertwined with family drama.
+                    <strong>Topic 1</strong>
+                    (domestic crime) is notably prevalent in
+                    <strong>Iran</strong>
+                    , where it accounts for the entire distribution, suggesting a focus on intimate and home-based thrillers.
+                    <strong>Topics 2 and 3</strong>
+                    , which include action-packed thrillers with elements of crime and missions, are more balanced across
+                    <strong>Japan</strong>
+                    and the
+                    <strong>United Kingdom</strong>
+                    , reflecting a diverse range of thriller subgenres in these regions. Meanwhile,
+                    <strong>Topic 0</strong>
+                    has a moderate presence in all countries but does not dominate any specific one. This distribution highlights cultural preferences in thriller movies, with some countries leaning more toward family-centric plots, while others emphasize action, crime, or organized operations.
+                    <br />
+                    <br />
+                </p>
+                <h3 id="15ee6020-8a94-80f8-b825-e8438bbd21f6" class="">Drama</h3>
+                <ul id="15ee6020-8a94-808c-98c7-fb6648100354" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;love&quot;, &quot;family&quot;, &quot;marry&quot;, &quot;father&quot;, &quot;mother&quot;, &quot;child&quot;, &quot;son&quot;, &quot;daughter&quot;, &quot;friend&quot;, &quot;man”<p id="f6087c99-4a13-47e6-abd9-e01ef5398698" class="">Best representative movie: A Woman in Flames</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-80f5-8b27-f771beb71fa8" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;man&quot;, &quot;village&quot;, &quot;son&quot;, &quot;return&quot;, &quot;family&quot;, &quot;father&quot;, &quot;story&quot;, &quot;wife&quot;, &quot;local&quot;, &quot;young”<p id="102f8c3e-6cb7-4cba-a3a8-f94e87757caf" class="">Best representative movie: Karayilekku Oru Kadal Dooram</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-80f8-ab84-c60104664a4f" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;school&quot;, &quot;friend&quot;, &quot;boy&quot;, &quot;mother&quot;, &quot;time&quot;, &quot;girl&quot;, &quot;man&quot;, &quot;child&quot;, &quot;story&quot;, &quot;home”<p id="75b319ea-cba4-4465-96b1-e1d1fa4369ff" class="">Best representative movie: The High Cost of Living</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-8003-899e-f0619dc9e4bf" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;father&quot;, &quot;man&quot;, &quot;home&quot;, &quot;mother&quot;, &quot;return&quot;, &quot;time&quot;, &quot;love&quot;, &quot;friend&quot;, &quot;woman&quot;, &quot;wife”<p id="f8da6e94-8c7d-4d46-b1f8-3a23fa86b271" class="">Best representative movie: The Great New Wonderful</p></li>
+                </ul>
+                <p id="15ee6020-8a94-8000-80ff-f2609ed5f27a" class="">
+                    <strong>Topic 0 </strong>
+                    centers on familial relationships and love, with keywords like
+                    <em>love</em>
+                    ,
+                    <em>family</em>
+                    ,
+                    <em>father</em>
+                    , and
+                    <em>mother</em>
+                    .
+                </p>
+                <p id="15ee6020-8a94-8097-8100-c12d3c97ba44" class="">
+                    <strong>Topic 1</strong>
+                    highlights village life and family dynamics, with words like
+                    <em>village</em>
+                    ,
+                    <em>return</em>
+                    , and
+                    <em>story</em>
+                    .
+                </p>
+                <p id="15ee6020-8a94-80d5-b836-db464e37d4f2" class="">
+                    <strong>Topic 2</strong>
+                    focuses on school life, friendships, and childhood experiences, featuring words such as
+                    <em>school</em>
+                    ,
+                    <em>friend</em>
+                    ,
+                    <em>boy</em>
+                    , and
+                    <em>mother</em>
+                    .
+                </p>
+                <p id="15ee6020-8a94-8080-891e-eadd47633b24" class="">
+                    <strong>Topic 3</strong>
+                    blends family, love, and home-related themes with terms like
+                    <em>father</em>
+                    ,
+                    <em>mother</em>
+                    ,
+                    <em>home</em>
+                    , and
+                    <em>return</em>
+                    .
+                    <br />
+                    <br />
+                    <br />
+                </p>
+                <figure id="15ee6020-8a94-8028-9886-d74ea58b8859" class="image">
+                    <a href="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%206.png"><img style="width:768px" src="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%206.png" /></a>
+                </figure>
+                <p id="15ee6020-8a94-80f0-9404-f5c1db2a9944" class="">
+                    <br />
+                    From the graph,
+                    <br />
+                    <strong>Topic 3</strong>
+                    dominates in most countries, particularly in the
+                    <strong>United States</strong>
+                    ,
+                    <strong>Argentina</strong>
+                    , and
+                    <strong>Japan</strong>
+                    , reflecting a global emphasis on familial and home-centered stories in drama films.
+                    <strong>Topic 0</strong>
+                    (family and love) is prominent in
+                    <strong>India</strong>
+                    and
+                    <strong>Iran</strong>
+                    , where it accounts for a significant proportion of the drama themes, underscoring the cultural importance of family and relationships in storytelling.
+                    <strong>Topic 1</strong>
+                    (village and family life) appears primarily in
+                    <strong>India</strong>
+                    and
+                    <strong>Japan</strong>
+                    , showcasing a regional focus on rural and local narratives. Meanwhile,
+                    <strong>Topic 2</strong>
+                    (school and friendships) is present but less dominant overall, with noticeable representation in the
+                    <strong>United Kingdom</strong>
+                    and
+                    <strong>Argentina</strong>
+                    .
+                </p>
+                <p id="15ee6020-8a94-802f-be9a-cb47e54056e8" class=""></p>
+                <h3 id="15ee6020-8a94-8080-b587-e9837c5da4bd" class="">Romance</h3>
+                <p id="15ee6020-8a94-80fd-9dea-ce665a59b084" class=""></p>
+                <p id="15ee6020-8a94-80bc-859c-cfeaeb6a8799" class="">
+                    We found 3 relevant themes
+                </p>
+                <ul id="15ee6020-8a94-8021-8ccc-d311350985ee" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;return&quot;, &quot;money&quot;, &quot;job&quot;, &quot;woman&quot;, &quot;home&quot;, &quot;wife&quot;, &quot;father&quot;, &quot;night&quot;, &quot;way&quot;, &quot;husband”<p id="420c3921-9c39-4b44-90b1-8ab4edc80d6e" class="">Best representative movie: Black Cat, White Cat</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-8032-b2f6-ceb86f124364" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;father&quot;, &quot;family&quot;, &quot;mother&quot;, &quot;relationship&quot;, &quot;school&quot;, &quot;home&quot;, &quot;parent&quot;, &quot;house&quot;, &quot;date&quot;, &quot;wedding”<p id="0bb2c30b-a06d-42dd-afdb-5085bd71ca66" class="">Best representative movie: Little city</p></li>
+                </ul>
+                <ul id="15ee6020-8a94-8012-a7ae-e969c6452634" class="bulleted-list">
+                    <li style="list-style-type:disc">&quot;woman&quot;, &quot;girl&quot;, &quot;father&quot;, &quot;daughter&quot;, &quot;son&quot;, &quot;story&quot;, &quot;marriage&quot;, &quot;family&quot;, &quot;wife&quot;, &quot;young”<p id="700292c6-ff95-4ab9-86a7-e9bdcdf5ae1d" class="">Best representative movie: Anbu Thozhi</p></li>
+                </ul>
+                <p id="15ee6020-8a94-8088-af60-d2da6e0cce10" class="">
+                    <strong>Topic 0</strong>
+                    focuses on themes involving
+                    <em>return</em>
+                    ,
+                    <em>money</em>
+                    ,
+                    <em>job</em>
+                    ,
+                    <em>woman</em>
+                    ,
+                    <em>home</em>
+                    , and
+                    <em>husband</em>
+                    , suggesting narratives about work, relationships, and domestic challenges.
+                </p>
+                <p id="15ee6020-8a94-8042-a75c-e46437757b57" class="">
+                    <strong>Topic 1</strong>
+                    centers on family and relationships, with words like
+                    <em>father</em>
+                    ,
+                    <em>family</em>
+                    ,
+                    <em>mother</em>
+                    ,
+                    <em>relationship</em>
+                    ,
+                    <em>school</em>
+                    ,
+                    <em>home</em>
+                    , and
+                    <em>wedding</em>
+                    , highlighting family-oriented romance stories.
+                </p>
+                <p id="15ee6020-8a94-808c-9a68-e7f6bb9516e2" class="">
+                    <strong>Topic 2</strong>
+                    emphasizes
+                    <em>woman</em>
+                    ,
+                    <em>girl</em>
+                    ,
+                    <em>father</em>
+                    ,
+                    <em>daughter</em>
+                    ,
+                    <em>marriage</em>
+                    , and
+                    <em>family</em>
+                    , which point to romantic stories featuring family dynamics, marriage, and young love.
+                </p>
+                <figure id="15ee6020-8a94-802f-b07f-cccaa80a11cc" class="image">
+                    <a href="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%207.png"><img style="width:707.9545288085938px" src="ADA%2015ee60208a9480d4aa01f6a186ab95a8/image%207.png" /></a>
+                </figure>
+                <p id="15ee6020-8a94-80f1-b5f4-e4bae723c99c" class="">
+                    <br />
+                    From the graph,
+                    <br />
+                    <strong>Topic 2</strong>
+                    (marriage and family themes) is dominant across most countries, particularly in
+                    <strong>India</strong>
+                    ,
+                    <strong>Iran</strong>
+                    , and
+                    <strong>Japan</strong>
+                    , reflecting a cultural focus on romantic relationships intertwined with family dynamics. In contrast,
+                    <strong>Topic 0</strong>
+                    (work and domestic challenges) holds a stronger presence in the
+                    <strong>United States</strong>
+                    and
+                    <strong>United Kingdom</strong>
+                    , where more individual and relationship-driven narratives are prominent.
+                    <strong>Topic 1</strong>
+                    (family and relationships) is notably significant in
+                    <strong>Argentina</strong>
+                    and
+                    <strong>Japan</strong>
+                    , indicating a balanced interest in family-centric romance.
+                </p>
+                <p id="15ee6020-8a94-803c-ab85-ff0080888c58" class=""></p>
+                <h3 id="15ee6020-8a94-805c-b572-e6cf77d3d707" class="">Summary of Genre Analysis</h3>
+                <p id="15ee6020-8a94-8039-b950-fa7598481bc7" class=""></p>
+                <p id="15ee6020-8a94-80e2-9af9-c724998d2f95" class="">
+                    Overall, while themes of
+                    <strong>family and relationships</strong>
+                    are universal, countries like
+                    <strong>India</strong>
+                    ,
+                    <strong>Iran</strong>
+                    , and
+                    <strong>Japan</strong>
+                    consistently prioritize
+                    <strong>familial and emotional ties</strong>
+                    across genres. Western countries such as the
+                    <strong>United States</strong>
+                    and
+                    <strong>United Kingdom</strong>
+                    incorporate a broader mix of themes, often blending individual struggles, domestic issues, and crime with family narratives. This reflects a cultural contrast between collective and individualistic storytelling approaches.
+                </p>
             </div>
         </section>
 
-        <p>It is now time to guess the first part of the code</p>
+<p>It is now time to guess the first part of the code</p>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Treasure Hunt. Designed by 4BigBrains.</p>
-    </footer>
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Treasure Hunt. Designed by 4BigBrains.</p>
+</footer>
 
-    <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
