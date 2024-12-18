@@ -222,15 +222,40 @@
         <section id="clue4" class="clue-section">
             <h2>Clue 4: The genre secret: Fortune or Fiasco?</h2>
             <p>"Thrillers, dramas, or comedies—does the genre of a film holds the key to its success?"</p>
-            <h3>Research Question:</h3>
-            <p>Is there a hidden pattern in the distribution of film genres, and how do they shape box office fortunes?</p>
+            <p>Is there a hidden pattern in the distribution of film genres? Maybe there is something to look at, let's see !</p>
             <div class="plot-container">
-                <h3>Data Visualization</h3>
-                <p>Analyze Film genre:</p>
                 <div id="plot4">
-                    <!-- Placeholder for Plotly or Chart.js visualization -->
+                    <iframe src="assets/graphs/barplot_boxofficerevenue_genres.html" width="100%" height="700" style="border:none;" scrolling="no"></iframe>
                 </div>
+                <p class="plot-description">
+                    Mmmmh so the film genres that product a lot of money are thriller, crime and romance... Maybe we should look if we obtain the same result when we are focusing on the best countries.
+                </p>
             </div>
+            <div class="plot-container">
+                <div id="plot5">
+                    <iframe src="assets/graphs/barplot_genres_countries.html" width="100%" height="700" style="border:none;" scrolling="no"></iframe>
+                </div>
+                <p class="plot-description">
+                    So in the best countries for movie industry, it seems that drama, thriller and romance are actually the main represented genres.
+                </p>
+                <br>
+                <p>
+                    If these are the most represented genres for the countries that understand best film industry then it should be our secret code... Let's try it! 
+                </p>
+            </div>
+        </section>
+
+        <section id="user-input4" class="clue-section">
+            <h2>Enter Your Answer</h2>
+            <p>Think you've figured out the clue? Enter your answer below:</p>
+            <section id="hint4">
+                <p><span class="hint-label">Hint:</span> <span id="hint4-text" class="blurred-text">Concatenate the 3 first letters (capital letters) of the 3 best genres of film industry.</span></p>
+            </section>
+            <form id="answer-form4">
+                <input type="text" id="user-answer4" placeholder="Enter your answer here..." required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="feedback4" style="margin-top: 10px;"></p>
         </section>
 
         <!-- Clue 5 Section -->

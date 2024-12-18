@@ -57,6 +57,38 @@ document.getElementById('hint2-text').addEventListener('click', function() {
     this.classList.toggle('unblurred'); 
 });
 
+// Script for the button of Clue 4
+document.getElementById('answer-form4').addEventListener('submit', function(event) {
+    // Empêcher le rechargement de la page par défaut
+    event.preventDefault();
+
+    // Récupérer la réponse de l'utilisateur
+    const userAnswer = document.getElementById('user-answer4').value.trim();
+    
+    // Spécifier la bonne réponse (par exemple, "solution")
+    const correctAnswer = "DRATHRROM"; 
+
+    // Vérifier la réponse
+    const feedback4 = document.getElementById('feedback4');
+    
+    // Check if the answer matches
+    if (userAnswer === "") {
+        feedback4.textContent = "Please enter a valid answer.";
+        feedback4.style.color = "red";
+    } else if (userAnswer === correctAnswer) {
+        feedback4.textContent = "Success! You've entered the correct answer. Keep it in mind until the end";
+        feedback4.style.color = "green";
+    } else {
+        feedback4.textContent = "Incorrect answer. Try again!";
+        feedback4.style.color = "red";
+    }
+});
+
+// Script for hint 4
+document.getElementById('hint4-text').addEventListener('click', function() {
+    this.classList.toggle('unblurred'); 
+});
+
 // Example of a Plotly plot in script.js
 Plotly.newPlot('plot1', [{
     x: [1, 2, 3, 4, 5],

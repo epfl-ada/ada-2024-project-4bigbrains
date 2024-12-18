@@ -326,3 +326,52 @@ button:hover {
     display: inline-block; /* Keep the text inline */
     margin-left: 10px; /* Space between the hint label and the blurred hint */
 }
+
+
+/* User input Clue 4 */
+#user-input4 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#user-answer4 {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback4 {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hint for clue 2 */
+
+#hint4{
+    margin-top: 20px;
+    text-align: center;
+}
+.hint-label {
+    font-weight: bold;
+    font-size: 18px; /* Keep "Hint" text normal size */
+}
+
+.blurred-text {
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+    transition: filter 0.3s ease;  /* Transition douce pour enlever le flou */
+    filter: blur(5px);  /* Appliquer un flou de 5px sur le texte */
+}
+
+.blurred-text.unblurred {
+    filter: blur(0);  /* Retirer le flou */
+    color: #333;  /* Changer la couleur du texte pour une meilleure lisibilité */
+}
+#hint4 p {
+    display: inline-block; /* Keep the text inline */
+    margin-left: 10px; /* Space between the hint label and the blurred hint */
+}
