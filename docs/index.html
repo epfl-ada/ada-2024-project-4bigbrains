@@ -18,7 +18,7 @@
                 <li><a href="#clue3">Clue 3</a></li>
                 <li><a href="#clue4">Clue 4</a></li>
                 <li><a href="#clue5">Clue 5</a></li>
-                <li><a href="#comments">Comments</a></li>
+                <li><a href="#final">Final answer</a></li>
             </ul>
         </nav>
 
@@ -42,9 +42,9 @@
             <div class="rules-content">
                 <div class="rules-text">
                     <h2>Rules of the Hunt</h2>
-                    <p>The 5th Big Brain, the most enigmatic member of the group, vanished without a trace. Known for his unparalleled insight into the world of cinema, he left behind a series of cryptic clues, scattered across the global cinematic landscape. These clues are not just a breadcrumb trail—they are a challenge, a treasure map leading the 4BigBrains on an extraordinary journey to rediscover the cultural essence of film. Are you ready to join the Cinematic Treasure Hunt: A Global Quest to Unearth the Hidden Gems of the Film Industry.</p>
+                    <p>The 5th Big Brain, the most enigmatic member of the group, vanished without a trace. Known for his unparalleled insight into the world of cinema, he left behind a series of cryptic clues, scattered across the global cinematic landscape. These clues are not just a breadcrumb trail—they are a challenge, a treasure map leading the 4BigBrains on an extraordinary journey to rediscover the cultural essence of film. Are you ready to join the Cinematic Treasure Hunt: A Global Quest to Unearth the Hidden Gems of the Film Industry ?</p>
                     <p>Before diving into the game, you must know how to play.</p>
-                    <p>Each clue will help you find the character string. At the end, you will need to concatenate all the strings to compose the code of the treasure chest.</p>
+                    <p>Each clue will help you find one part of the final answer. At the end, you will need to concatenate all the sub-codes to compose the final answer of the treasure chest.</p>
                 </div>
                 <div class="rules-image">
                     <img src="assets/img/chest.png" alt="Treasure Hunt Rules">
@@ -56,7 +56,7 @@
         <section id="clue1" class="clue-section">
             <h2>Clue 1: Top representatives</h2>
             <p>"The world is vast, but which lands stand out on the cinematic map? Seek out the top representatives from each region."</p>
-
+            <p> Let’s begin by analyzing the number of movies produced by each country : </p>
             <!-- Plot 1 -->
             <div class="plot-container">
                 <div id="plot1">
@@ -72,7 +72,7 @@
 
             <!-- Plot 2 -->
             <div class="plot-container">
-                <p>Let's analyze the amount a money generated with the film industry to confirm our previous findings </p>
+                <p>Let's analyze the amount a money generated with the film industry to confirm our previous findings :</p>
                 <div id="plot2">
                     <iframe src="assets/graphs/average_revenue_by_countries.html" width="70%" height="700" style="border:none;"></iframe>
                 </div>
@@ -143,24 +143,24 @@
 
 
             <br>
-            <p> First, we performed a Pearson correlation to estimate the direct impact of GDP of the countries on the total box office revenue. Here are the results :</p>
+            <p> First, let's see the direct impact of GDP of the countries on the total box office revenue by performing a Pearson correlation :</p>
             <p style="font-size: 20px;"> Correlation coefficient = 0,09</p>
             <p style="font-size: 20px;"> P-value = 4 × 10<sup>-19</sup></p>
             <p>There is a small but significant correlation between Movie box office revenue and GDP</p>
             <br>
-            <p> Then, we performed a Pearson correlation to estimate the direct impact of GDP of the countries on the number of film produced. Here are the results :</p>
+            <p> Then, we performed a Pearson correlation to estimate the direct impact of GDP of the countries on the number of film produced :</p>
             <p style="font-size: 20px;"> Correlation coefficient = 0,23</p>
             <p style="font-size: 20px;"> P-value = 0,32</p>
             <p>The correlation between the number of film produced and the GDP is not significant. </p>
 
             <!-- Plot 2 -->
             <div class="plot-container">
-                <p>Let's evaluate the importance of different features in the total box office</p>
+                <p>Let's evaluate the importance of different features in the total box office :</p>
                 <div id="plot1">
                     <iframe src="assets/graphs/regression_coefficients_2.html" width="70%" height="700" style="border:none;"></iframe>
                 </div>
                 <p class="plot-description">
-                    The 3 features that are not significant are the movie genres romance, drama and crime. We notice that their coefficient has a small absolute value.. We can observe that the coefficient of GDP is large and positive which means that the wealthier are the countries the more their more industry is developped.
+                    The 5 features that are not significant are actor height and age and the movie genres romance, drama and crime. We notice that their coefficient has a small absolute value. We can observe that the coefficient of GDP is large and positive which means that the wealthier are the countries the more their more industry is developped.
                 </p>
             </div>
 
@@ -170,7 +170,7 @@
             <h2>Enter Your Answer</h2>
             <p>Think you've figured out the clue? Enter your answer below:</p>
             <section id="hint2">
-                <p><span class="hint-label">Hint:</span> <span id="hint2-text" class="blurred-text">Add all the coefficients with significant coefficiant (in millions of $).</span></p>
+                <p><span class="hint-label">Hint:</span> <span id="hint2-text" class="blurred-text">What is the coefficient for GDP (rounded to the nearest whole number, in millions $)?</span></p>
             </section>
             <form id="answer-form2">
                 <input type="text" id="user-answer2" placeholder="Enter your answer here..." required>
@@ -187,34 +187,36 @@
             <h2>Clue 3: Actors gender</h2>
             <p>"Where there’s talent, there’s a story. Discover how the gender of actors shapes the narrative."</p>
             <div class="plot-container">
-                <p>Let's evaluate the importance of different features in the total box office</p>
+                <p>Let's evaluate the importance of different features in the total box office :</p>
                 <div id="plot1">
                     <iframe src="assets/graphs/actor_gender_plots.html" width="100%" height="700" style="border:none;" scrolling="no"></iframe>
                 </div>
                 <p class="plot-description">
                     Concerning the USA, India, the UK and Japan we notice that the gender distribution is in favor of males, with on average 60% of actors and 40% of actresses in the movies throughout the years. Since 1940, the distribution did not really change, we observe a plateau in the curve of those 4 countries, the ratio is staying approximetaly the same. No countries put real efforts in establishing gender euquality in their movie industry. Concerning Argentina and Iran, the results are oscillating a lot, we cannot observe any trend. We think that there are not enough data to draw conclusions.
                 </p>
+                <br>
+                <p> Let’s perform additional analyses to obtain other results.</p>
             </div>
 
             <br>
-            <p> The Pearson correlation estimates if the ratio of female/male actors is significant ofr the success of a mive. Here are the results :</p>
+            <p> The Pearson correlation estimates if the ratio of female/male actors is significant in the success of a movie :</p>
             <p style="font-size: 20px;"> Correlation coefficient = 0,24</p>
             <p style="font-size: 20px;"> P-value = 1,31 × 10<sup>-57</sup></p>
             <p>The P-value is really small. There is a significant relation between the ratio and the box office revenue, however it is probably not linear. </p>
             <br>
             <p>
-                Once we knew that the correlation was significant we tried te find the optimal ratio for success. We performed a linear regression of degree 2, found the value of x corresponding to df/dx = 0. It corresponds to -b/2a. In the case of the curve of box office revenues in terms of ratios the value of x = 10,47.
-
-                To maximise the chance to produce a blockbuster, the number of actors should be 10 times higher than the number of actresses.
+                Now that we know the correlation is significant, let’s try to find the optimal ratio for success by performing a quadratic regression. We can then find the value of x corresponding to df/dx = 0, which is given by  −b/2a. In the case of the curve representing box office revenues as a function of the ratio, the value of 
+                x is 10.47. To maximize the chances of producing a blockbuster, the number of actors should be approximately 10 times higher than the number of actresses. 
             </p>
-
+            <br>
+            <p>Wait whattt?! Well, at least we found a number... </p>
         </section>
 
         <section id="user-input3" class="clue-section">
             <h2>Enter Your Answer</h2>
             <p>Think you've figured out the clue? Enter your answer below:</p>
             <section id="hint3">
-                <p><span class="hint-label">Hint:</span> <span id="hint3-text" class="blurred-text">What is the the percentage of actresses in the american film industry in 1961?</span></p>
+                <p><span class="hint-label">Hint:</span> <span id="hint3-text" class="blurred-text">How many times should male actors outnumber actresses for maximum success?</span></p>
             </section>
 
             <form id="answer-form3">
@@ -228,7 +230,7 @@
         <section id="clue4" class="clue-section">
             <h2>Clue 4: The genre secret: Fortune or Fiasco?</h2>
             <p>"Thrillers, dramas, or comedies—does the genre of a film holds the key to its success?"</p>
-            <p>Is there a hidden pattern in the distribution of film genres? Maybe there is something to look at, let's see !</p>
+            <p>Is there a hidden pattern in the distribution of film genres? Maybe there is something to look at, let's see :</p>
             <div class="plot-container">
                 <div id="plot4">
                     <iframe src="assets/graphs/barplot_boxofficerevenue_genres.html" width="100%" height="700" style="border:none;" scrolling="no"></iframe>
@@ -531,8 +533,41 @@
             </div>
         </section>
 
-<p>It is now time to guess the first part of the code</p>
+        <section id="user-input5" class="clue-section">
+            <h2>Enter Your Answer</h2>
+            <p>Think you've figured out the clue? Enter your answer below:</p>
+            <section id="hint5">
+                <p><span class="hint-label">Hint:</span> <span id="hint5-text" class="blurred-text">What is the main topic in Thriller, Romance and Drama? Concatenate the 3 numbers.</span></p>
+            </section>
+            <form id="answer-form5">
+                <input type="text" id="user-answer5" placeholder="Enter your answer here..." required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="feedback5" style="margin-top: 10px;"></p>
+        </section>
 
+        <!-- Final answer Section -->
+        <section id="final" class="final-section">
+        <section id="user-inputfinal" class="clue-section">
+            <h2>Did you find the final clue?</h2>
+            <p>Think you've figured out the clue? Enter your answer below:</p>
+            <section id="hintfinal">
+                <p><span class="hint-label">Hint:</span> <span id="hintfinal-text" class="blurred-text">It should look at something like this: clue1 clue 2 clue 3 clue4 clue5</span></p>
+            </section>
+
+            <form id="answer-formfinal">
+                <input type="text" id="user-answerfinal" placeholder="Enter your answer here..." required>
+                <button type="submit">Submit</button>
+            </form>
+                       
+            <p id="feedbackfinal" style="margin-top: 10px;"></p>
+            <div id="successContainer" style="display: none; text-align: center;">
+                <img id="success-image" src="assets/img/chest.png" alt="Chest" style="max-width: 100%; height: auto;">
+                <h1 style="color: white; font-size: 3rem; margin-top: 20px;">Congrats, you won...</h1>
+                <p style="color: white; font-size: 1rem; margin-top: 20px;">...the script of Inception 2 left by Christopher Nolan! Use everything you've learned during this treasure hunt to make the most of your skills and achieve success :)</p>
+            </div> 
+            
+            
     </main>
 
 <!-- Footer -->

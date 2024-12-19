@@ -172,6 +172,7 @@ body {
     color: #4B2E2E; /* Assurez-vous que la couleur est bien sombre et visible */
     font-weight: bold; /* Mettre les titres en gras */
     margin-bottom: 20px; /* Espacement sous le titre */
+    text-align: center;
 }
 
 /* Footer */
@@ -328,6 +329,56 @@ button:hover {
 }
 
 
+/* User input Clue 3 */
+#user-input3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#user-answer3 {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback3 {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hint for clue 3 */
+
+#hint3{
+    margin-top: 20px;
+    text-align: center;
+}
+.hint-label {
+    font-weight: bold;
+    font-size: 18px; /* Keep "Hint" text normal size */
+}
+
+.blurred-text {
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+    transition: filter 0.3s ease;  /* Transition douce pour enlever le flou */
+    filter: blur(5px);  /* Appliquer un flou de 5px sur le texte */
+}
+
+.blurred-text.unblurred {
+    filter: blur(0);  /* Retirer le flou */
+    color: #333;  /* Changer la couleur du texte pour une meilleure lisibilité */
+}
+#hint3 p {
+    display: inline-block; /* Keep the text inline */
+    margin-left: 10px; /* Space between the hint label and the blurred hint */
+}
+
+
+
 /* User input Clue 4 */
 #user-input4 {
     margin-top: 20px;
@@ -348,8 +399,7 @@ button:hover {
     color: #333;
 }
 
-/* Hint for clue 2 */
-
+/* Hint for clue 4 */
 #hint4{
     margin-top: 20px;
     text-align: center;
@@ -374,4 +424,127 @@ button:hover {
 #hint4 p {
     display: inline-block; /* Keep the text inline */
     margin-left: 10px; /* Space between the hint label and the blurred hint */
+}
+
+/* User input Clue 5 */
+#user-input5 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#user-answer5 {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback5 {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hint for clue 5 */
+#hint5{
+    margin-top: 20px;
+    text-align: center;
+}
+.hint-label {
+    font-weight: bold;
+    font-size: 18px; /* Keep "Hint" text normal size */
+}
+
+.blurred-text {
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+    transition: filter 0.3s ease;  /* Transition douce pour enlever le flou */
+    filter: blur(5px);  /* Appliquer un flou de 5px sur le texte */
+}
+
+.blurred-text.unblurred {
+    filter: blur(0);  /* Retirer le flou */
+    color: #333;  /* Changer la couleur du texte pour une meilleure lisibilité */
+}
+#hint5 p {
+    display: inline-block; /* Keep the text inline */
+    margin-left: 10px; /* Space between the hint label and the blurred hint */
+}
+
+/* Hint for final answer */
+
+#user-inputfinal {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#user-inputfinal p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#user-answerfinal {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedbackfinal {
+    font-size: 14px;
+    color: #333;
+}
+
+#hintfinal{
+    margin-top: 20px;
+    text-align: center;
+
+}
+.hint-label {
+    font-weight: bold;
+    font-size: 18px; /* Keep "Hint" text normal size */
+}
+
+.blurred-text {
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+    transition: filter 0.3s ease;  /* Transition douce pour enlever le flou */
+    filter: blur(5px);  /* Appliquer un flou de 5px sur le texte */
+}
+
+.blurred-text.unblurred {
+    filter: blur(0);  /* Retirer le flou */
+    color: #333;  /* Changer la couleur du texte pour une meilleure lisibilité */
+}
+#hintfinal p {
+    display: inline-block; /* Keep the text inline */
+    margin-left: 10px; /* Space between the hint label and the blurred hint */
+    text-align: center;
+
+}
+
+#successContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Indique qu'on peut cliquer pour fermer */
+}
+
+#successContainer img {
+    max-width: 400px; /* Limite la taille de l'image */
+    height: auto;
 }
