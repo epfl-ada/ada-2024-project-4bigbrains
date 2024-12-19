@@ -34,7 +34,7 @@ document.getElementById('answer-form2').addEventListener('submit', function(even
     const userAnswer = document.getElementById('user-answer2').value.trim();
     
     // Spécifier la bonne réponse (par exemple, "solution")
-    const correctAnswer = "130894"; 
+    const correctAnswer = "81"; 
 
     // Vérifier la réponse
     const feedback2 = document.getElementById('feedback2');
@@ -54,6 +54,38 @@ document.getElementById('answer-form2').addEventListener('submit', function(even
 
 // Script for hint 2
 document.getElementById('hint2-text').addEventListener('click', function() {
+    this.classList.toggle('unblurred'); 
+});
+
+// Script for the button of Clue 3
+document.getElementById('answer-form3').addEventListener('submit', function(event) {
+    // Empêcher le rechargement de la page par défaut
+    event.preventDefault();
+
+    // Récupérer la réponse de l'utilisateur
+    const userAnswer = document.getElementById('user-answer3').value.trim();
+    
+    // Spécifier la bonne réponse (par exemple, "solution")
+    const correctAnswer = "30"; 
+
+    // Vérifier la réponse
+    const feedback3 = document.getElementById('feedback3');
+    
+    // Check if the answer matches
+    if (userAnswer === "") {
+        feedback3.textContent = "Please enter a valid answer.";
+        feedback3.style.color = "red";
+    } else if (userAnswer === correctAnswer) {
+        feedback3.textContent = "Success! You've entered the correct answer. Keep it in mind until the end";
+        feedback3.style.color = "green";
+    } else {
+        feedback3.textContent = "Incorrect answer. Try again!";
+        feedback3.style.color = "red";
+    }
+});
+
+// Script for hint 3
+document.getElementById('hint3-text').addEventListener('click', function() {
     this.classList.toggle('unblurred'); 
 });
 
@@ -83,6 +115,9 @@ document.getElementById('answer-form4').addEventListener('submit', function(even
         feedback4.style.color = "red";
     }
 });
+
+
+
 
 // Script for hint 4
 document.getElementById('hint4-text').addEventListener('click', function() {
