@@ -1,7 +1,8 @@
 # Cinema Treasure Hunt: A Global Quest to Unearth the Hidden Gems of the Film Industry
 
 ## Abstract
-Welcome to the *Cinematic Treasure Hunt*, an adventure that takes you across the global cinematic landscape. Guided by the cryptic clues left by the mysterious 5th Big Brain, you’ll explore how different regions influence the film industry, from economic factors to storytelling trends and cultural nuances. Step by step, you’ll solve riddles and piece together fragments of a larger puzzle. Each clue brings you closer to unlocking the treasure chest at the heart of this thrilling quest. 
+Welcome to the *Cinematic Treasure Hunt*, an adventure that takes you across the global cinematic landscape. Guided by the cryptic clues left by the mysterious 5th Big Brain, you’ll explore how different regions influence the film industry, from economic factors to storytelling trends and cultural nuances. 
+Step by step, you’ll solve riddles and piece together fragments of a larger puzzle. Each clue brings you closer to unlocking the treasure chest at the heart of this thrilling quest. 
 Are you ready to join the hunt and uncover the final discovery? 
 [Start the Cinematic Treasure Hunt](https://epfl-ada.github.io/ada-2024-project-4bigbrains/)
 ## Research Questions
