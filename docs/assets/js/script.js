@@ -66,7 +66,7 @@ document.getElementById('answer-form3').addEventListener('submit', function(even
     const userAnswer = document.getElementById('user-answer3').value.trim();
     
     // Spécifier la bonne réponse (par exemple, "solution")
-    const correctAnswer = "10"; 
+    const correctAnswer = "30"; 
 
     // Vérifier la réponse
     const feedback3 = document.getElementById('feedback3');
@@ -98,7 +98,7 @@ document.getElementById('answer-form4').addEventListener('submit', function(even
     const userAnswer = document.getElementById('user-answer4').value.trim();
     
     // Spécifier la bonne réponse (par exemple, "solution")
-    const correctAnswer = "DRATHRROM"; 
+    const correctAnswer = "DTR"; 
 
     // Vérifier la réponse
     const feedback4 = document.getElementById('feedback4');
@@ -166,7 +166,7 @@ document.getElementById('answer-formfinal').addEventListener('submit', function(
     const userAnswer = document.getElementById('user-answerfinal').value.trim();
     
     // Spécifier la bonne réponse (par exemple, "solution")
-    const correctAnswer = "USAIUKJAI 17 10 DRATHRROM FAMILY"; 
+    const correctAnswer = "USAIUKJAI 17 30 DTR FAMILY"; 
 
     // Vérifier la réponse
     const feedbackfinal = document.getElementById('feedbackfinal');
