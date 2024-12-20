@@ -155,16 +155,19 @@ body {
 }
 
 /* Clue Sections */
+
 .clue-section {
     max-width: 900px; /* Limit the width of the box */
     margin: 0 auto;   /* Center the box */
-    padding: 20px;    /* Space inside the box */
-    text-align: justify;      /* Justify all text padding: 50px 10%;text-align: center;*/
-    
-    margin-bottom: 50px;
-    border-bottom: 2px solid #ccc;
+    text-align: justify; /* Justify all text */
+    border: none; /* Remove standard border */
+    background: url('../img/line.png') bottom center no-repeat;
+    background-size: 900px auto;
+    padding: 0px 20px 100px; /* Add extra padding at the bottom for space above the line */
 
 }
+
+
 
 .clue-section h2 {
     font-size: 2.5rem;  /* Taille du texte */
@@ -200,9 +203,63 @@ body {
     margin-top: 10px; /* Add space above the text */
     font: Helvetica;
     font-size: 16px; /* Adjust font size */
-    color: #4B2E2E; /* Subtle color for descriptive text */
+    color: var(--primary-color); /* Subtle color for descriptive text */
 }
 
+
+
+
+
+
+.gfg {
+    position: relative;
+    width: auto; /* Change from 100% to auto to allow natural sizing */
+    max-width: 450px; /* Set a maximum width for the image */
+    margin: 0 auto; /* Center the image horizontally if needed */
+    text-align: center;
+}
+.gfg img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.gfg a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the surrounding text */
+    font-weight: normal; /* Remove bold */
+  }
+.text-container {
+    position: absolute;
+    width: 100%; /* Ensure it spans the full width of the parent */
+    font-family: 'Treasure-Map', 'Roboto', sans-serif;
+    color: #4B2E2E;
+    line-height: 1.5;
+    font-weight: 500;
+    left: 0; /* Align to the left of the parent */
+    top: 52%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 22px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.correlation {
+    font-size: 0.9rem;
+    border-left: 4px solid #ccc; /* Adds a left border */
+    padding-left: 16px; /* Adds space between the text and the line */
+    font-style: italic; /* Optional: makes it look more like a citation */
+}
+
+blockquote {
+    border-left: 4px solid #4B2E2E; /* Adds a left border */
+    padding-left: 16px; /* Adds space between the text and the line */
+    font-style: italic; /* Optional: makes it look more like a citation */
+    font-family: 'Treasure-Map', 'Roboto', sans-serif;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #4B2E2E;
+  }
+  
 
 .rules-image {
     flex: 1;
