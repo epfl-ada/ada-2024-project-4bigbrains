@@ -132,7 +132,7 @@ document.getElementById('answer-form5').addEventListener('submit', function(even
     const userAnswer = document.getElementById('user-answer5').value.trim();
     
     // Spécifier la bonne réponse (par exemple, "solution")
-    const correctAnswer = "432"; 
+    const correctAnswer = "FAMILY"; 
 
     // Vérifier la réponse
     const feedback4 = document.getElementById('feedback5');
@@ -166,7 +166,7 @@ document.getElementById('answer-formfinal').addEventListener('submit', function(
     const userAnswer = document.getElementById('user-answerfinal').value.trim();
     
     // Spécifier la bonne réponse (par exemple, "solution")
-    const correctAnswer = "USAIUKJAI 17 10 DRATHRROM 432"; 
+    const correctAnswer = "USAIUKJAI 17 10 DRATHRROM FAMILY"; 
 
     // Vérifier la réponse
     const feedbackfinal = document.getElementById('feedbackfinal');
