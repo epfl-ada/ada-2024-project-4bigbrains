@@ -72,11 +72,12 @@ The exploratory data analysis (EDA) will enable us to select six geographically 
    - Focus on themes within genres (e.g., comparing horror films in the U.S. vs. Asia) to explore how different cultures approach similar types of stories.
 
 ## Contributions of all group members
-Every member of the team have been working on a specific part of the project, including the code, result.py and the data story of their respective part.
-- Clue 1 (Inès and Julie): Identify the six best representative countries across major regions using exploratory analysis. Select based on production volume, box office success, and thematic variety.
-- Clue 2 (Julie): Analyze which countries are the production giants over time. Examine trends to identify any emerging hubs in global film production.
-- Clue 3 (Inès): Investigate box office revenue by region. Determine if countries with high production also experience box office success, and explore revenue trends.
-- Clue 4 (Ines): Assess the relationship between GDP and success in the film industry. Analyze whether higher GDP correlates with greater production and revenue or if there are exceptions. Look at potential correlation between GDP and themes.
+Every member of the team have been working on a specific part of the project, including the code, result.py and the data story of their respective part. We all came together to choose an artistic direction and decided to hold regular meetings to ensure consistent collaboration across all parts.
+
+- Clue 1 (Adrien): Data cleaning + Identify the six best representative countries across major regions using exploratory analysis. Select based on production volume, box office success, and thematic variety.
+- Clue 2 (Julie and Inès): Identify the relationship between GDP and the movie industry: Calculate the Pearson correlation to measure the strength and direction of their association. Use linear regression to identify the significant variables that contribute to the success of a movie.
+- Clue 3 (Julie and Inès): Work on genders: find the optimal ratio of male to female actors in a cast to maximize box office revenues
+- Clue 4 (Julie and Inès): Find the pattern in the distribution of film genres.
 - Clue 5 (Guilhem and Romain): Conduct LDA thematic analysis on plot summaries to reveal prominent storytelling themes by country. Focus on understanding cultural nuances in cinematic themes across regions.
 
 ## Quickstart
